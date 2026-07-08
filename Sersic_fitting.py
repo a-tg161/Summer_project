@@ -22,6 +22,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
+from astropy.table import Table
+from tqdm import tqdm
 
 from pysersic import FitSingle
 from pysersic.priors import SourceProperties
@@ -36,23 +38,22 @@ jax.config.update("jax_enable_x64", True)
 # USER INPUTS -- edit these for each object/filter you want to fit
 # ---------------------------------------------------------------------------
 
-GALAXY_ID = "56116"                 # object ID, used for labeling/output files
-FILTER = "F444W"                    # filter name, used for labeling/output files
-SURVEY = 'PRIMER-UDS'
 
-# Path to the multi-extension science FITS file.
-#   ext [1] -> science image
-#   ext [2] -> segmentation map (converted to a boolean mask)
-#   ext [3] -> rms / error map
-SCIENCE_FITS_PATH = f"/nvme/scratch/work/alberttg/Summer_project/Cutouts/{GALAXY_ID}/{FILTER}.fits"
 
-# Path to the PSF FITS file (assumed to be in extension 0, change PSF_EXT
-# below if not). Will be cropped to match/fit the science image.
-PSF_FITS_PATH = f"/nvme/scratch/work/alberttg/Summer_project/PSFs/{SURVEY}/{FILTER}_psf_norm.fits"
-PSF_EXT = 0
+with fits.open("/nvme/scratch/work/alberttg/Summer_project/Ha_and_NII_broad_line_data.fits") as hdul:
+        data = hdul[1].data
+TABLE = Table(data)
 
-# Output directory for plots/results
-OUTPUT_DIR = f"/nvme/scratch/work/alberttg/Summer_project/Sersic_fits/{GALAXY_ID}"
+
+GALAXY_ID = TABLE["SURVEY_ID"]        # object ID, used for labeling/output files
+FILTERS = ["F444W","F356W","F277W"]                    # filter name, used for labeling/output files
+SURVEY = TABLE["SURVEY"]
+
+
+
+    # surveys = table["SURVEY"]
+
+
 
 # Sampling settings
 NUM_WARMUP = 1000
@@ -178,17 +179,17 @@ def center_crop(arr, target_shape):
 
 
 def run_fit(
-    galaxy_id=GALAXY_ID,
-    filt=FILTER,
-    science_fits_path=SCIENCE_FITS_PATH,
-    psf_fits_path=PSF_FITS_PATH,
-    psf_ext=PSF_EXT,
-    output_dir=OUTPUT_DIR,
-    profile_type=PROFILE_TYPE,
-    sky_type=SKY_TYPE,
-    num_warmup=NUM_WARMUP,
-    num_samples=NUM_SAMPLES,
-    num_chains=NUM_CHAINS,
+    galaxy_id,
+    filt,
+    science_fits_path,
+    psf_fits_path,
+    psf_ext,
+    output_dir,
+    profile_type,
+    sky_type,
+    num_warmup,
+    num_samples,
+    num_chains,
 ):
     """
     Run the full pysersic fitting pipeline for one galaxy/filter and save
@@ -237,31 +238,69 @@ def run_fit(
         num_samples=num_samples,
         num_chains=num_chains,
     )
-
+    fitter.sampling_results.save_result(f"{output_dir}/{filt}_sersic_fit_data.asdf")# Saves asdf file
     # -- Summary -----------------------------------------------------
     summary_df = results.summary()
-    print(f"[{tag}] Posterior summary:")
-    print(summary_df)
+    # print(f"[{tag}] Posterior summary:")
+    # print(summary_df)
     summary_df.to_csv(os.path.join(output_dir, f"{tag}_summary.csv"))
 
     # -- Plots -----------------------------------------------------
     # Data / model / residual
-    # fig_resid = results.plot_residual()
-    # fig_resid.suptitle(f"{galaxy_id} - {filt}: data / model / residual")
-    # resid_path = os.path.join(output_dir, f"{tag}_data_model_residual.png")
-    # fig_resid.savefig(resid_path, dpi=150, bbox_inches="tight")
-    # print(f"[{tag}] Saved data/model/residual plot to {resid_path}")
+    fig_resid = results.plot_residual()
+    fig_resid.suptitle(f"{galaxy_id} - {filt}: data / model / residual")
+    resid_path = os.path.join(output_dir, f"{tag}_data_model_residual.png")
+    fig_resid.savefig(resid_path, dpi=150, bbox_inches="tight")
+    print(f"[{tag}] Saved data/model/residual plot to {resid_path}")
 
     # Corner plot
     fig_corner = results.corner()
     fig_corner.suptitle(f"{galaxy_id} - {filt}: posterior corner plot")
     corner_path = os.path.join(output_dir, f"{tag}_corner.png")
     fig_corner.savefig(corner_path, dpi=150, bbox_inches="tight")
-    print(f"[{tag}] Saved corner plot to {corner_path}")
-
-    plt.show()
-
+    # print(f"[{tag}] Saved corner plot to {corner_path}")
+    
     return results
+
+
+def everything():
+    """
+    Runs single sersic profile fitting for all my galaxies for 3 filters.
+    """
+
+    for i in tqdm(range(len(GALAXY_ID)),total=len(GALAXY_ID)):
+        for filt in FILTERS:
+
+            try:
+                # Path to the multi-extension science FITS file.
+                #   ext [1] -> science image
+                #   ext [2] -> segmentation map (converted to a boolean mask)
+                #   ext [3] -> rms / error map
+                SCIENCE_FITS_PATH = f"/nvme/scratch/work/alberttg/Summer_project/Cutouts/{GALAXY_ID[i]}/{filt}.fits"
+
+                # Path to the PSF FITS file (assumed to be in extension 0, change PSF_EXT
+                # below if not). Will be cropped to match/fit the science image.
+                PSF_FITS_PATH = f"/nvme/scratch/work/alberttg/Summer_project/PSFs/{SURVEY[i]}/{filt}_psf_norm.fits"
+                PSF_EXT = 0
+
+                # Output directory for plots/results
+                OUTPUT_DIR = f"/nvme/scratch/work/alberttg/Summer_project/Single_sersic_fits/{GALAXY_ID[i]}"
+
+                run_fit(galaxy_id=GALAXY_ID[i],
+                        filt=filt,
+                        science_fits_path=SCIENCE_FITS_PATH,
+                        psf_fits_path=PSF_FITS_PATH,
+                        psf_ext=PSF_EXT,
+                        output_dir=OUTPUT_DIR,
+                        profile_type=PROFILE_TYPE,
+                        sky_type=SKY_TYPE,
+                        num_warmup=NUM_WARMUP,
+                        num_samples=NUM_SAMPLES,
+                        num_chains=NUM_CHAINS)
+            
+            except Exception as e:
+                print(e)
+                continue
 
 
 # ---------------------------------------------------------------------------
@@ -269,4 +308,4 @@ def run_fit(
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    run_fit()
+    everything()

@@ -49,10 +49,9 @@ GALAXY_ID = TABLE["SURVEY_ID"]        # object ID, used for labeling/output file
 FILTERS = ["F444W","F356W","F277W"]                    # filter name, used for labeling/output files
 SURVEY = TABLE["SURVEY"]
 
-
-
-    # surveys = table["SURVEY"]
-
+# FOLDER = "Single_sersic_fits"
+FOLDER = "Double_sersic_fits"
+# FOLDER = "PS_single_sersic_fits"
 
 
 # Sampling settings
@@ -60,8 +59,10 @@ NUM_WARMUP = 1000
 NUM_SAMPLES = 1000
 NUM_CHAINS = 2
 
-# Sersic profile type to fit: 'sersic', 'exp', 'dev', or 'pointsource'
-PROFILE_TYPE = "sersic"
+# Sersic profile type to fit:
+# PROFILE_TYPE = "sersic"
+PROFILE_TYPE = "doublesersic"
+# PROFILE_TYPE = "sersic_pointsource"
 SKY_TYPE = "flat"   # 'none', 'flat', or 'tilted-plane'
 
 
@@ -221,6 +222,7 @@ def run_fit(
         mask=mask,
         loss_func=gaussian_loss,
     )
+    # FitSingle refers to fitting a single galaxy not a single Sersic profile
 
     # -- Quick MAP estimate first (fast, useful sanity check / init) -----
     print(f"[{tag}] Finding MAP estimate...")
@@ -253,6 +255,24 @@ def run_fit(
     fig_resid.savefig(resid_path, dpi=150, bbox_inches="tight")
     print(f"[{tag}] Saved data/model/residual plot to {resid_path}")
 
+    # Saving fits file of data / model / residual-----------------------------------------------------------new bit here might not work but lets try
+    fits_path = os.path.join(output_dir, f"{tag}_data_model_residual.fits")
+
+    model = fitter.sampling_results.best_model
+    residual = image - model
+
+    hdul = fits.HDUList([
+        fits.PrimaryHDU(),                              # Empty primary HDU
+        fits.ImageHDU(image, name="SCIENCE_IMAGE"),         # Extension 1
+        fits.ImageHDU(model, name="MODEL"),             # Extension 2
+        fits.ImageHDU(residual, name="RESIDUAL"),       # Extension 3
+        fits.ImageHDU(mask.astype("uint8"), name="MASK"),  # Extension 4
+        fits.ImageHDU(rms, name="RMS"),                 # Extension 5
+    ])
+
+    hdul.writeto(fits_path, overwrite=True)
+    print(f"[{tag}] Saved FITS residual file to {fits_path}")
+
     # Corner plot
     fig_corner = results.corner()
     fig_corner.suptitle(f"{galaxy_id} - {filt}: posterior corner plot")
@@ -284,7 +304,7 @@ def everything():
                 PSF_EXT = 0
 
                 # Output directory for plots/results
-                OUTPUT_DIR = f"/nvme/scratch/work/alberttg/Summer_project/Single_sersic_fits/{GALAXY_ID[i]}"
+                OUTPUT_DIR = f"/nvme/scratch/work/alberttg/Summer_project/{FOLDER}/{GALAXY_ID[i]}"
 
                 run_fit(galaxy_id=GALAXY_ID[i],
                         filt=filt,

@@ -115,6 +115,7 @@ def masks_cutout(ID, coord, size, output_path, seg_path):
         newhdu.writeto(save_as, overwrite=True)
         #print(f'{ID} final mask saved as "{ID}mask_final.fits"')
 
+
 def constraints(output_path, ID):
     #Function to create constraints file for Galfit
     #I have never chanegd these so not sure how important this is.

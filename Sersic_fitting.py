@@ -28,17 +28,13 @@ from tqdm import tqdm
 from pysersic import FitSingle
 from pysersic.priors import SourceProperties
 from pysersic.loss import gaussian_loss
+from pysersic.results import plot_residual
 
 # jax / numpyro config -- pysersic uses jax under the hood
 import jax
 jax.config.update("jax_enable_x64", True)
 
-
-# ---------------------------------------------------------------------------
-# USER INPUTS -- edit these for each object/filter you want to fit
-# ---------------------------------------------------------------------------
-
-
+#---------------------------------------------------------
 
 with fits.open("/nvme/scratch/work/alberttg/Summer_project/Ha_and_NII_broad_line_data.fits") as hdul:
         data = hdul[1].data
@@ -50,8 +46,8 @@ FILTERS = ["F444W","F356W","F277W"]                    # filter name, used for l
 SURVEY = TABLE["SURVEY"]
 
 # FOLDER = "Single_sersic_fits"
-FOLDER = "Double_sersic_fits"
-# FOLDER = "PS_single_sersic_fits"
+# FOLDER = "Double_sersic_fits"
+FOLDER = "PS_single_sersic_fits"
 
 
 # Sampling settings
@@ -61,8 +57,8 @@ NUM_CHAINS = 2
 
 # Sersic profile type to fit:
 # PROFILE_TYPE = "sersic"
-PROFILE_TYPE = "doublesersic"
-# PROFILE_TYPE = "sersic_pointsource"
+# PROFILE_TYPE = "doublesersic"
+PROFILE_TYPE = "sersic_pointsource"
 SKY_TYPE = "flat"   # 'none', 'flat', or 'tilted-plane'
 
 
@@ -243,19 +239,23 @@ def run_fit(
     fitter.sampling_results.save_result(f"{output_dir}/{filt}_sersic_fit_data.asdf")# Saves asdf file
     # -- Summary -----------------------------------------------------
     summary_df = results.summary()
+
+
+    
     # print(f"[{tag}] Posterior summary:")
     # print(summary_df)
     summary_df.to_csv(os.path.join(output_dir, f"{tag}_summary.csv"))
 
     # -- Plots -----------------------------------------------------
     # Data / model / residual
-    fig_resid = results.plot_residual()
+    fig_resid = results.plot_residual() # ------------------------------------------------------------------Wouldn't work for some reason...
     fig_resid.suptitle(f"{galaxy_id} - {filt}: data / model / residual")
     resid_path = os.path.join(output_dir, f"{tag}_data_model_residual.png")
     fig_resid.savefig(resid_path, dpi=150, bbox_inches="tight")
+    plt.close(fig_resid)
     print(f"[{tag}] Saved data/model/residual plot to {resid_path}")
 
-    # Saving fits file of data / model / residual-----------------------------------------------------------new bit here might not work but lets try
+    # Saving fits file of data / model / residual-----------------------------------------------------------new bit here did not work, no file saved with such name
     fits_path = os.path.join(output_dir, f"{tag}_data_model_residual.fits")
 
     model = fitter.sampling_results.best_model
@@ -271,14 +271,16 @@ def run_fit(
     ])
 
     hdul.writeto(fits_path, overwrite=True)
+    hdul.close()
     print(f"[{tag}] Saved FITS residual file to {fits_path}")
 
     # Corner plot
-    fig_corner = results.corner()
+    fig_corner = results.corner()#------------------------------------------------------didn't save either
     fig_corner.suptitle(f"{galaxy_id} - {filt}: posterior corner plot")
     corner_path = os.path.join(output_dir, f"{tag}_corner.png")
     fig_corner.savefig(corner_path, dpi=150, bbox_inches="tight")
-    # print(f"[{tag}] Saved corner plot to {corner_path}")
+    plt.close(fig_corner)
+    print(f"[{tag}] Saved corner plot to {corner_path}")
     
     return results
 
@@ -322,10 +324,6 @@ def everything():
                 print(e)
                 continue
 
-
-# ---------------------------------------------------------------------------
-# MAIN
-# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     everything()

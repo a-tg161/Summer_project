@@ -139,14 +139,15 @@ PROFILES = [
 # Which of the PROFILES entries (by "key") to actually run. Edit this list
 # to fit a subset -- e.g. RUN_PROFILE_KEYS = ["sersic", "pointsource"].
 # RUN_PROFILE_KEYS = [p["key"] for p in PROFILES]
-RUN_PROFILE_KEYS = ["sersic_pointsource", "sersic"]
+# RUN_PROFILE_KEYS = ["sersic_pointsource", "sersic"]
+RUN_PROFILE_KEYS = ["sersic_pointsource"]
 
 # Sampling settings
 NUM_WARMUP = 1000
 NUM_SAMPLES = 1000
 NUM_CHAINS = 2
 
-BASE_OUTPUT_DIR = "/raid/scratch/work/westcottl/external_projects/Albert_fitting"
+BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/PS_single_sersic_fits"
 CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Cutouts"
 PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/PSFs"
 

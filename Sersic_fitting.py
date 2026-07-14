@@ -46,8 +46,8 @@ FILTERS = ["F444W","F356W","F277W"]                    # filter name, used for l
 SURVEY = TABLE["SURVEY"]
 
 # FOLDER = "Single_sersic_fits"
-# FOLDER = "Double_sersic_fits"
-FOLDER = "PS_single_sersic_fits"
+FOLDER = "Double_sersic_fits"
+# FOLDER = "PS_single_sersic_fits"
 
 
 # Sampling settings
@@ -57,8 +57,8 @@ NUM_CHAINS = 2
 
 # Sersic profile type to fit:
 # PROFILE_TYPE = "sersic"
-# PROFILE_TYPE = "doublesersic"
-PROFILE_TYPE = "sersic_pointsource"
+PROFILE_TYPE = "doublesersic"
+# PROFILE_TYPE = "sersic_pointsource"
 SKY_TYPE = "flat"   # 'none', 'flat', or 'tilted-plane'
 
 

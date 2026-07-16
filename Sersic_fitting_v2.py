@@ -95,9 +95,8 @@ import corner as corner_pkg
 with fits.open("/nvme/scratch/work/alberttg/Summer_project/Ha_and_NII_broad_line_data.fits") as hdul:
     data = hdul[1].data
 TABLE = Table(data)
-
-GALAXY_ID = TABLE["SURVEY_ID"]   # object ID, used for labeling/output files
-SURVEY = TABLE["SURVEY"]
+GALAXY_ID = TABLE["SURVEY_ID"][98:]   # object ID, used for labeling/output files
+SURVEY = TABLE["SURVEY"][98:]
 
 FILTERS = ["F444W", "F356W", "F277W"]  # filters to fit, used for labeling/output files
 

@@ -92,11 +92,13 @@ import corner as corner_pkg
 # USER INPUTS -- edit these for each run
 # ---------------------------------------------------------------------------
 
+# Python Interpreter = /nvme/scratch/software/envs/lewi_galfind/bin/python
+
 with fits.open("/nvme/scratch/work/alberttg/Summer_project/Ha_and_NII_broad_line_data.fits") as hdul:
     data = hdul[1].data
 TABLE = Table(data)
-GALAXY_ID = TABLE["SURVEY_ID"][98:]   # object ID, used for labeling/output files
-SURVEY = TABLE["SURVEY"][98:]
+GALAXY_ID = TABLE["SURVEY_ID"]   # object ID, used for labeling/output files
+SURVEY = TABLE["SURVEY"]
 
 FILTERS = ["F444W", "F356W", "F277W"]  # filters to fit, used for labeling/output files
 
@@ -140,13 +142,14 @@ PROFILES = [
 # RUN_PROFILE_KEYS = [p["key"] for p in PROFILES]
 # RUN_PROFILE_KEYS = ["sersic_pointsource", "sersic"]
 RUN_PROFILE_KEYS = ["sersic_pointsource"]
+# RUN_PROFILE_KEYS = ["sersic"]
 
 # Sampling settings
 NUM_WARMUP = 1000
 NUM_SAMPLES = 1000
 NUM_CHAINS = 2
 
-BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/PS_single_sersic_fits"
+BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Single_sersic_fits"
 CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Cutouts"
 PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/PSFs"
 
@@ -155,7 +158,7 @@ PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/PSFs"
 # DIAGNOSTICS
 # ---------------------------------------------------------------------------
 
-def inspect_renderer(renderer=None, image_shape=(32, 32)):
+def inspect_renderer(renderer=None, image_shape=(32,32)):
     """
     Diagnostic: print the actual call signatures of the renderer's
     render_source() and any per-profile render_<type>() methods on your

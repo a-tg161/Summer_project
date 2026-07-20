@@ -1,0 +1,423 @@
+SIMPLE  =                    T / conforms to FITS standard                      BITPIX  =                    8 / array data type                                NAXIS   =                    0 / number of array dimensions                     EXTEND  =                    T                                                  ID      =                 8875                                                  INSTR   = 'ACS_WFC+NIRCam'                                                      SURVEY  = 'JADES-DR3-GN-Medium'                                                 VERSION = 'v13     '                                                            RA      =   189.15196401271038                                                  DEC     =    62.25965049967749                                                  SIZE_AS =                 0.96                                                  SIZE_PIX=                 32.0                                                  END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -64 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   32                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'SCI     '           / extension name                                 MJD-BEG =      59978.093733753 / [d] MJD at start of observation                MJD-AVG =      59978.347463213 / [d] MJD at midpoint of observation             MJD-END =      59978.600217072 / [d] MJD at end of observation                  TDB-BEG =    59978.09754985145 / [d] TDB time of exposure start in MJD          TDB-MID =   59978.351285751756 / [d] TDB time of exposure mid-point in MJD      TDB-END =    59978.60404574535 / [d] TDB time of exposure end in MJD            XPOSURE =              9276.57 / [s] Exposure (integration) time                TELAPSE =              9276.57 / [s] Elapsed time (start to stop)                                                                                                       JWST ephemeris information                                                                                                                              REFFRAME= 'EME2000 '           / Ephemeris reference frame                      EPH_TYPE= 'Definitive'         / Definitive or Predicted                        EPH_TIME=    59978.09677832332 / [d] MJD time of position and velocity vectors  JWST_X  =   -103665750.5061299 / [km] barycentric JWST X coordinate at MJD_AVG  JWST_Y  =    99338597.55868615 / [km] barycentric JWST Y coordinate at MJD_AVG  JWST_Z  =    42778115.03119134 / [km] barycentric JWST Z coordinate at MJD_AVG  OBSGEO-X=     -541324928.42312 / [m] observatory X-coordinate                   OBSGEO-Y=      1509892713.9642 / [m] observatory Y-coordinate                   OBSGEO-Z=      335543583.70221 / [m] observatory Z-coordinate                   JWST_DX =  -22.175053881291056 / [km/s] barycentric JWST X velocity at MJD_AVG  JWST_DY =  -19.115675949835094 / [km/s] barycentric JWST Y velocity at MJD_AVG  JWST_DZ =   -8.150916363330591 / [km/s] barycentric JWST Z velocity at MJD_AVG  OBSGEODX=  -152.53302873458415 / [m/s] geocentric JWST X velocity at MJD_AVG    OBSGEODY=  -133.37992398680856 / [m/s] geocentric JWST Y velocity at MJD_AVG    OBSGEODZ=    77.99768235978787 / [m/s] geocentric JWST Z velocity at MJD_AVG    PA_APER =   240.92057745005968 / [deg] Position angle of aperture used          VA_SCALE=   1.0000146035495219 / Velocity aberration scale factor               BUNIT   = 'MJy/sr  '           / physical units of the array values                                                                                                     Photometry information                                                                                                                                  PHOTMJSR=   0.4020000100135803 / Flux density (MJy/steradian) producing 1 cps   PHOTUJA2=    9.448781312080854 / Flux density (uJy/arcsec2) producing 1 cps     PIXAR_SR= 2.11539874851881E-14 / Nominal pixel area in steradians               PIXAR_A2= 0.000900000000000000 / Nominal pixel area in arcsec^2                                                                                                         Information about the coordinates in the file                                                                                                           RADESYS = 'ICRS    '           / Equatorial coordinate system                                                                                                           Spacecraft pointing information                                                                                                                         RA_V1   =   188.92909339752794 / [deg] RA of telescope V1 axis                  DEC_V1  =   62.207783297384026 / [deg] Dec of telescope V1 axis                 PA_V3   =    240.7783714626429 / [deg] Position angle of telescope V3 axis                                                                                              WCS parameters                                                                                                                                          WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =     -1791.3566292753 / Pixel coordinate of reference point            CRPIX2  =       1378.456447261 / Pixel coordinate of reference point            CRVAL1  =      189.11491709001 / [deg] Coordinate value at reference point      CRVAL2  =      62.267305895902 / [deg] Coordinate value at reference point      CTYPE1  = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2  = 'DEC--TAN'           / Declination, gnomonic projection               CUNIT1  = 'deg     '           / Units of coordinate increment and value        CUNIT2  = 'deg     '           / Units of coordinate increment and value        CDELT1  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  PC1_1   =     0.48602153879109 / Coordinate transformation matrix element       PC1_2   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2   =    -0.48602153879109 / Coordinate transformation matrix element       S_REGION= 'POLYGON ICRS  189.154333751 62.338611480 188.963898937 &'            CONTINUE  '62.289305231 189.075421063 62.196233416 189.265449557 62.245387432&' CONTINUE  '' / spatial extent of the observation                                VELOSYS =            -4387.78  / [m/s] Velocity towards source                  EXTVER  =                    1 / extension value                                WCSNAMEA= 'ARCHIVED_WCS'       / Coordinate system title                        WCSAXESA=                    2 / Number of coordinate axes                      CRPIX1A =      6412.6433707247 / Pixel coordinate of reference point            CRPIX2A =       6079.456447261 / Pixel coordinate of reference point            PC1_1A  =     0.48602153879109 / Coordinate transformation matrix element       PC1_2A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2A  =    -0.48602153879109 / Coordinate transformation matrix element       CDELT1A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CUNIT1A = 'deg'                / Units of coordinate increment and value        CUNIT2A = 'deg'                / Units of coordinate increment and value        CTYPE1A = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2A = 'DEC--TAN'           / Declination, gnomonic projection               CRVAL1A =      189.11491404787 / [deg] Coordinate value at reference point      CRVAL2A =      62.267302958416 / [deg] Coordinate value at reference point      MJDREF  =                  0.0 / [d] MJD of fiducial time                       DATE-BEG= '2023-02-03T02:14:58.596' / ISO-8601 time at start of observation     DATE-AVG= '2023-02-03T08:20:20.822' / ISO-8601 time at midpoint of observation  DATE-END= '2023-02-03T14:24:18.755' / ISO-8601 time at end of observation       RADESYSA= 'ICRS'               / Equatorial coordinate system                   VELOSYSA=             -4387.78 / [m/s] Velocity towards source                  WCSNAME = 'TWEAK   '           / Coordinate system title                        WCSTYPE = 'user-defined'                                                        CD1_1   = 4.04942827269473E-06 / partial of first axis coordinate w.r.t. x      CD1_2   = -7.2826750288535E-06 / partial of first axis coordinate w.r.t. y      CD2_1   = -7.2836595876750E-06 / partial of second axis coordinate w.r.t. x     CD2_2   = -4.0505338831809E-06 / partial of second axis coordinate w.r.t. y     ORIENTAT=   -119.0794225499403                                                  ZEROPNT = '26.51   '                                                            LONPOLE =                180.0 / [deg] Native longitude of celestial pole       LATPOLE =      62.267305895902 / [deg] Native latitude of celestial pole        END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ?Qq.R¿°È?[D–*a£?`	ã´tþÁ?aÒ„nÚ‚?P_”:±@ë¿Iê\8ÿN¿TDqŸ^?*ÚŠëº÷^?QV*hÎ¼?Cs‘ˆ§È?OWÃøÁäâ? cšÚ¡¿6µê(ûa?æî4ºÌ¿Cjì7l?>ØYå*¿M/CÐ|Ÿ…¿41ÇÂóf¿S±]À?@#¬ü0¿"[Pdßð¿ õæM›í?gÉþ|©ž?N)íÿ[ˆ¿T°Å4²0”¿8¶nŒ—mp¿Jþ¶ðÐ·V¿VýTj‘þ¿UëÉVufÆ?GXÜë¦?fÓÚF¿#ú?WnîsÄ—D¿p“¢×¢|¿@‰¥BsyP?ïÂx”ž#?SÎ€ëÈ?šK¦ó¼x¿B!/¥ÃS¿3â´Ì¬l©?I„ã,‡–¯?Qî¬°Ÿ?<ÐWöÀ&?S®·\·¿C¸+úòÞÚ¿V‚/
+)>ý	•An3ø?S±­¥ä‡¼?I“1÷þ	¿QW>õ¼—¿D×5€õ"¿FI©Üé¹æ?X$ˆÝª?DRýv/·?#ŸžTÃx?Xy{[­?<´äAtÉÔ¿fnÉub€¾¿A¨µÓzª¿U:½]Ç¿8K©®„c?IÑHØƒi–?KßæD±a?N‚LßJž?\÷ò*Qd4¿Q­dYÄ×¿K0ÝŒÊÌ”¿¾aïˆ½?R­6™¸Š¿ž¯\•®À¿NÖwt`Û¿4ì¡¤Ç“^¿(ie§uè¿72Áò-‰¿võ6?MÆØCZ³‡?aÓÍ‰À8–?Yï:?!	?V¯!¥t?WW¤*R?X‘`Ú5¥¿9¬âÕP§¿I´ªH ±?4¯—Ø†@X?bÄ"¯úÚW?_…¢¦¯¨¿Bäf€×¸?2ýÆZ0¤¨?8Ÿå!E#Á¿9Ž9u´Fä¿B| žŽ.?<Ié$5ê?P$ÈöN`?A=÷zgh?ExMc™8V?2q¿‘íÓ&?Xþ
+æ	´ê¾ãd»¨ÜÙ ?De%
+ vî?@~–òé#¿S&å§=‚¿Sð1~ÊÄ¿f¥ 1È.¿Ff8d‡²æ?FñÃpÔøª¿JŽäS-v?+Àá {F?WÚ“JÊ?dlx¢²T?o3°òq?dþ¸ñã?š?Q”‡¼–©,?Óÿ?ªHê¿0LÜmÆG2¿Jçíà_Ç?E†ÄWË¥?K
+†»0è?Q1¥­í»?3xZƒ#y…¿J}ëâšÕÉ¿GT49Aú¿S}‘
+rïd¿Lv)À2»¿-Þ.¢Õ¢?E—ÃŽ]X?SYgEêê¥?IZ|°ZÉ>ùì·Vx?A,MÞ,?c·z=`£ô?WÕ:èU?9’¢˜€¿QG†÷ §¨¿SUJ}ã|°¿a#ÆN{ÿJ¿[hõ#ãÊ¿O86/ˆ÷
+?7%ÔiÍ€²?W»8Ì=ñ?Y¿›t¿?U	Q’²J?`±˜‚ÀNö¿2tG Ç?^xBmrCm?Bä‰Yn ¤¿Pw»¿ÕÔï¿SÒ›²§•k¿ÒKï?Eõ=÷
+z‹?E}t-ùm$¿:q0…V¿[P’hHÆ¿L2ÕîûBÄ¿H¦#gŽ¿NY˜e¿Q¥L|l\	¿[ê‡Ã»¿9Œ—›ú?VL5õ°+¿,‰t­ìš™?5^d‘Âò?4ll%‹<?‹ê¢l?6†œ¯ì_¿fªÑcCr¿ZÁz‹1­ì¿@Tó,­´¿T&ýÂ‹$o¿7æ²ò¼?\ÅQØäuW?aõ¬¥%»?Qn¿ÉwU?.ÓºhN7N?R¢µj‚}y?R4\–»¤˜?	! @ xØ¿U†õn¿RPù•¥n¿Cy¬5¬¿F¿ÜÎðÅ?=8‚LPÖ ?N[È¶ô?0¿…ý¤LJ¿Pé8B»9¿N
+
+º¨Ø	?B‹°Ý	1?f¯™±™N¿Gž%ÜgU>þò*í	Ô¿Këš§–±¿Pl:AðÈÄ¿H”âVhø¿D"ÅŒU@¿8Ùƒhfð]?R•e9‚~×?`x³{ò…|¿OÖÓß0¾¿^ÓÏòö[	?QXw©¶}î¿7!ç‘Ú?U„!…PqÒ?+Àá•&V?EÂ0?c|ž¹6¿?S=¹€Hi?:“ù¶mv??DJ”Epã…¿@c¿­©L?N].9Îgõ?V_ù‘ˆ3ê¿1	´j5Bh¿K:J™§°¿Ýw/!åâ?D–òÏ©…K?<µ¾#¡î¿Köš4Zp¿.UaÈmB8?=µ?¢¸è°?EVvLn‹b¿Jïg‹*‹¿ÑÔÂ ¿EUà\S2¿'±–ëg³Ñ¿Z¤ŒrMÖ¿Jè4“™?K€\7Àx„?YÚ:W?g{ÇµÝ˜?P¸¥åÓ,?H¿Õð06`?[SA4y?bU4n?]¸@7Âw?O±³¬cîÎ?=ÄÛAÐdÙ¿<:¨Õ ¿@¥È_ðäp¿5£Z~¶¿FøBÛm$m¿e‚ÔÀ„
+¿@êWMkÉf?bý›ø¿MFìsI¿iÉápÜx½¿O£Ï±¬oÜ?1,‹
+ûj7¿Aè4YeT¿P@™+oD0¿:+Ÿ|µ2¿Ž2Ÿ2?5¶®–«N>Ù`t
+¿Ÿ
+¿LTX 2À+?6/ßš‚9?IUÖ×L¿?Òöª€/?CÊÐ_äáÛ?WÀ˜(“X?QL)ž=Þ?S@2 „\?F^Ò‰öÇí?]|ýLû°?cÚÜ#Ó.?aXð†¿4Ö?Aâ}@“ù;?JÁ‡Ä«Z?CÇyd„ó¿Fÿÿó_Ð‰¿WŸ7^é¦‘¿L“j·©¢ð?7–Íùú–ü?@ìc}½p¿MûÃ;$å`¿4
+³‡[h¿0{t¯Á¿a8Œ~¬¿Lñ ég‰
+?Ó’‹Ü¿]'>oŠ^S¿bÞOG÷ai¿2Üº‚¨¿,)SXF?F@Õ¾›ÄÖ?3¼WóÝðÞ¿3Jî¥¦ñ–¿)Û—‰9v?:¤œÅlÅ¿PvÑ]ß¿CvâKËz?`‹J*LDe?dînªä?Gz]ú#Ø??9oKÜ¬?6¥	’ç,?U$ /O<V?I€MuA“x¿Gð|—n¿P@d¡ j¿D-éã’]q¿UÅg1¨³·?LƒõNÉ?5nË#¢?R²3x'¥'¿=PýÕ¯S¿=:,]íÃ.?^dl@ª¾¼?WLp¨¿7
+l÷á»Ú¿?pÍðÁJ>÷éÎól¿9ƒ”­ÂÙÕ?P"òüdë?Vå>A
+rÐ?9,[‚‚,?S×¹Ùgí?BOE‘¸¡>ä´27
+?˜¿F2iÇ¢T¿Eý”‹:X¿Y[/¤'¿Cï¯¼)Ì?R;ÿ º?a|ÑZD>?U8BCì=¿A–§¹ÔçÞ¿S;KøÅ·ÿ¿I¤ßæ}8¿8j3à’ž??Pë¬ÆPÓ¿8¬Äo è¿PØ‰Ÿœï¿R^¹È&?Ca×[°²ƒ¿RÉnû¿B?*VPèë¿aÄßìø…Å¿XÂÃ?TCLÄw??T“/k˜¿CÃò³kx>ÿˆLX?Lñ1wèô¿%õ²áæõë¿4qfTëG9?T`!€¡??6aÖá!n?:+ËÀÇ¯?aˆ	äÙ“³?Krp,ôëW¿`BÎo%(G¿/6ŽÝ†?VH¡ýBe¿3ªÑ1eÜ?;s¨¬«?i1ŽÊ\Šu?d·JàFÆ?V2‚ºT&>èXT†€_ ?"ŸÙðŠn¿<jè“s¿*o´n¿0ÐÄ\	ç¿I qhÌ¿8I¿í£è¿RtÚ¥¤¯¿V‹þ*NÕ6¿VM« ³M?¿Qº0“í¿NCU†Y÷?UÂPQïñ?SŒ±B„·¿%Ëb±‡†€?37$K•æ}?Yq”?3±†æŒ™¿.Æ˜>Â¿zP¦B|¿Vš9óï¿AÇ‡Q¸•Æ?``SiË™?Cº[Çì7,¿G£Ì4u±N¿*ª+üìŒ?M1‚Îã;æ¿@v]BœÊ¿EÄa1sì?R?EQÕ~o?aÇ ©¯"É?H½’¼uJe¿,™2É@ê¿'¥ÝA°æ¿€‚šx÷?¥\Å±Ô—?Gý8`b…?OXëÀ¯?K+¦úÚ=?Oí¦Á¹¿IâsúõQ¿UxËÒô¹¿#äïfæ•>äš¹‡à¨@?=¢‰~ƒÕ?CÆ*pe¯?3 œ­ÿz?0|lµ<)?g3í•Ö'„¿3ýR<É®?S@³Þ´d˜?StÌ›FLÉ¿4ä‘Šã¯ ??˜½|›?\Ùyú‹Å ?+Åc"ÑÓN?=·B1Üèz¿R¨³¸A?"ÿ¯dÜ”?M?ð%¢\¥?SRQŒŒ?_	Í#3'B?Y¶ŒG÷*æ?SœY¿Ú?4õÔœo•ø¿"çc¸b¿Så‰¨º7¿U^†šÈÿ»¿Eèý3©ß|¿=˜N­rÖ?Q ø¿rõv?\07"øÂ7?WAaŠû?DEsüM„Š?#‚á‡4£ ¿KEâi£ñ¿6¥{úí®0¿GÑæO?Äs;ƒü?Z  t\ª?[t=~ºÄi?(d «[f5?Kµ’Kú?hl$Òà8?JÕš£$>?YiAF^ñ?H(4'Œˆ*?PCÏ³ÉŒ"?0ÅCÇ#ƒø¿R‡xZ®'Ä?4µ°U¬Äž?RÑggd?4oõjN=?Q*ab$c?U×S@2?Tj”Fó¿i¸ïbF€7¿\Ì„²y?P¤Z˜èXE¿G¢rÆQ„?0µ£Ëþ•¿#ˆI—7ªF¿\õ\¨|{ï?…òo]Ú?`(ôð	Ü¶?N Z]šWÏ¿V–4ï÷È5¿SÊ”wÅÑØ¿P (Ü|/¿E.'Rì9?!4øw Ð?]ÙÔH({?Q!û«zâ?Gñr†¿OU§©JcO?5Àƒô|d¿}¯±ˆã¿S)póZÉ¿]×°ÙáÛ¿VRXn³›?PÖsÈu«?_ú>}Ó<?=ø†@b?RbkO[k¿1½ò­®?EË¢Àcq?d­'‚H?O,÷¿W½Cã ¹¿¿aâ¼³•–? czW6¿Q3&˜½Td?(&
+e{@¿PÔf{?CPoã”Õø¿FWÓo2X;¿5‹oTzL?$Ê"4Î¿W¤*y„¿GÓH¸NúD?5`0ŽÞJ?}%‚hë?apÚg_ïï?d„•íæG?YÉ”š=?èZ ð¿I2qöWdÇ?àº[†¡°¿]ò×õºh¿V7¹»y.¿`îv“ì§¿Mol#Õ‚Ÿ¿3Jó·,U¿RÍ‡ãˆ¿Y¸ÈGåbw¿E´ÇÉZÿ¿5ú0ð³?%ÙfÀd?XÔ6ïoè?D®b%LH¿QD0¹¤i`¿b|WH¶V¿[¢€’h¿U/º}œð¿Q–5š»ÆB¿_…ØM:Ì¿] W[¼¿N<f¥Š¿JÓg¨çÌ?(o›Ž:I¿N­&EÐo¿J/˜Õ×¨ü¿Œ¥4žð?5%4œ"†?TÉI•Q€ ?Té«Tx¿]Y_‚ó‡¿]sBýë­l¿O¾P–D³¿VœïÎdŒ¿KÉ©äŸ;b?/÷×˜[Ä¿F”±ÂÜe¿UÓŽ[˜F¿A`ËÐÖ¿]åU!‡¿QÕ›ëcÃÊ¿P-öðEg?Móœ?aÀüAw2?WÛ¾‘LR¤?QkèðÓñ\?Lâ§÷Øžb¿ [à] ¿Q™³ÇT·¿Cs¡Z‘Ì—¿"¢üžƒ?7ÚuX*¿WëGå[ó¿>sL>•Ý†¿"g9°÷AX¿5a°»0l¿>1<úÍ»¿Q^†WÄ?FrOŽ¿LêÂkž~¿P ðªÓ±¿HÞïw ­§¿O‘Ò{§P¿NÃ~à¿:þ1g‡ï¿R|¨ï}‚¿Z9Ã™ûª?bÓ}Í<=¿=÷^ÍþQ¿F¢´©O»Ò¿Bô4šÒV*¿(xšØ* ?EQÒÐºýŠ?(ü%9ìî?RN(H”B ?dˆT(l@•?Më#žš/°¿Ám]Ó7‡?Y$Éßv»?@&úÚXƒ¿Q;§¬TyÒ?>˜Bv²ê4¿2u£“tç¿+QcÔ¿>Û‹äF»¿,:ÝŸß_?6½+" þ¿PVÚ+Ý\¿[wùö6³–¿UÈmbñn0¿C´ð~õù6¿`Ÿw'¶f‘¿g}˜àDª'¿T]†EŒêÖ¿3i£‡+Y?OcudºäÚ?Y&Õ c?W}ÀÕlÌ?a¢X\ñ~8?c¤¬¹‰€‚¿Ee5á?#'"»W?		«t?M’Ù…1ñÔ?bá‹uþ]?EÁ¹4¸ž8?A•‹[©@?QfŠ›‹<¢?S4h/ÁØ?4Ôã“šÃ´¿ˆnøêÔj¿M2œ±d}º¿[wó…˜2¿V¦§¸.Öh¿W@ÞØu¿@ÄöáµÌž?E×ª|cf"?Eójæâ?W"Õ$ÔÂÛ?_­ò¤­ì¿PÓ¤­B¿bA@Q+JÝ¿PÔ† ºà¿FrŽ¢º#~¿`ô
+A¡²ú¿@ÙÝÄ§Ih?(ŸÅ£0þ¶?HóÑ!?6‹‘E€º?bfñàŒú?bf”Y\ÚV¿¤ÛŒrû•¿EöÙm”¿(i%>@Q˜?FzNC¬K@?N¤O¡{¨¿7‰°½[@¬¿GÍk¶îÇõ?X¯C‡ŒŸ?_b¯Í‡(?G$×[ÌŠè?'=FáÔ×?Lþù$nÔ?IÏ,÷q‘J¿Pp*XYåã¿Vñ¸ÿê¿Iµþ:„>?0únœë?^ìOõ'?R‰gÎÁ»¸?W‘…òÿ¥P?N0túº¿KI7u]"S¿\´2f®¿MŒåD¢R?A¨Îã¿PvÔ0Á
+?UþòzJx? \5Â8)¿]å²h+¿J
+R“|´ú?U¾EãYŒÛ?2)»ô%+¿\"UQÐ¸M¿EJ‘b=˜?'•…&÷Ÿ?O„¶.6eJ?SL_IFß³¿BX<å_¿:G„xí?Sâ°¢E×?QD$ÀZèü?FD†ªuu?J	!…~*=?Y.zÕjÖ2?JÀ£Ú¬‰Ê¿G’õÖQÀ¿W	ÌjÏû?PÌâµD8Ë?X>Z§§Î?cC.#™j?ZŠ×21‘?*Áœ:Ê¿FsôÚXœv¿>Ü×Ùk?¶?A×ïº©ñ¬¿Q”KZ¾ºw¿S½ßfø34¿8£”G. ?@2©˜bfê?D‚nS^Œ?JTÚ–4¿Ÿáì+À¿0Çž`G^¿Z˜/pŸA?2þ¯â?T
+[ö3¿BšŽ ¢æL¿2ÇâÌÐ?Vû|¯0 ¨¿
+÷Íñf4î?AJxÇ6?bÖôOˆÄ?UhN¢Å‰¾ì¥ãOˆh?8Ú
+þÏ?V(Áÿã>üéV5È#¿R´oAÀh¿S9€â}P?Uáï—àHÿ?VÈ¼†7óó?U»j°¤¾?^šqWäú?O½l"¿&¿HãÎ|6ÿ?/î–#©‡Ö?Q!LVcì?Kòkê%;Ž¿@p@ñÞgZ¿[EÈÇk¿@å9Â±?8ßOï=Ì?V· =Íö?RÞ¾ñ>%Œ¾íÛ{cB¯ ¿RÎ(b`ä?;ÃnìWB?bŸû¿Y¶?=æÇÊ˜¢¿$‰€+Á?à3lÕÊd?Qð^Bp=¥?Y?=¸tJ?k®H)^Þ?\¿Âe|Üé¿'ð˜Rgîv?/F.½¨íà¿+ï
+Ê	è¿TÅz)FÐ¿_	Ú^Ÿìý¿XÿŒÄ|‚¿W,f›éþ¿$¼Ö9Ç˜E?2[«ãÚLÒ?IÔ¡ªÖ‰ç?)\‘—l¿7L…°[›?[®gQØ?ZcèfùH?K£°Ði…˜¿7©‹¾Š
+E¿W øÞ\¾¿[Óõf¿V6yB?)&R±+¿'ÂoÁW¿Wzyà[ßj¿AAÏ!BD¿!8ïÿÊë\?^†GŸ­„?XD¡£“Î?F¦Z„iî?LÑ†ô;?Wå¢?J¢Ô€\W?R“…ovô?Eš§‡%3¿SŽb«WÆS?+{‹à=¿OÖª™M:%¿<gížc
+¿G\ÅÃiØ ¿K|ºÿ±¿2|…x¢¹¿B¢³Ùà?3?=hSj?/èWG—Ir?KëÛ¥h?P‰ÁZf}ç?[‘4iHŒH?WÎYáKwÛ?W Œ7E$?8ŸŒ#v0?EÜò—M6¿/á>ŠÆï8¿RP:%mô¿ÿíP'¿0ÐØ^­—¿C‰AÀI^?ðÄpûÖ‘¿CN<lû¿??ÒÌ6¢â¿7’þÐa¾ñ –Ð›â¿8‹ÊKv~j¿"†¼@H¿1ìÖ2(ù*¿-ÊW¿×g¿VUWWlú™¿P.ÈI—?FY†Û¿q?[jóx?e¥«,vOa?K l#
+¢?I¾€¦öF?ZI¸'=‘?E©ºÊ D^?QÀ-osš?SÞ%9(?Ió“ÁWh¾ó>:	…q°?;` vWê?(ÐÉ'¡/[?J‡·‹Êæ?@´?Ö¾¿c¨Í’‘P?=ï/¬Éf_?<é÷ˆS%¾âèöm ¿ÀÍ¼¶GÎ¿2}ZU˜÷?!e·VµE¿PáŠ\V¿]‹=?îò¿BÛÐ^Š©?Dz*R€:V¿@S!%Çÿ?£zdø]¿]NïQþk¿<„M÷"'ü?8©LI§z?C¡«Þé„ì¿ à`ñö¸?_+-ëÃ"?NlsÚqbÎ?\Mdê?d÷‰‡k›£?U‰J¶¿?CåéJh—?Oê"ò©ò>áb
+Däo„¿Sv|[^&\¿8™t/¿
+ÃÌžÍE¿JÀL¡_Ë¿*!óø?S ›«,»2?*–Ä„ðäê¿RÚ «/À?°}× è¿H¹¡¢3˜¿3Û«ŸƒN?î±•ªñ?:?0vF¢D?9+dŒ²?ak„?š >Ü»€žu ¿\ÞMŠÚaÇ¿E›yqO+¿LRÕ±±t¿P"Áõ,%?EÔO–2¯%?WäQ¦vc?cßûÆ0Ü?V#1^f??BðºU;¿Qø4®s-t?9w‡vËî?Iræu/Å?ðo·ODó¿&£â®5{þ?JC…Ó9>ÛÝŒ·Ú€¿Mž€e¾¿©Ê9?D:Uî)T?6œœœ5ÐN?0êt#Ãº\?QŠý¥g¾I?[xAKHÄÀ?F­–èb"? V &¿bC#é:¤¿c­¾Ì†6õ¿1_Œ†u?,Åï-r0?Wí‚gÏrÓ?,3bièòL?6ÝYÂÛð¿2^¾gq)ñ¿Zó‹µ$~æ¿_“¾ö„*Ã?X§Rú-?b¤ú*Ìl?]Nw¸ûöû?m ÐkÚº?cz!r¦ä?R„žËù¼f?+â™¡G‡?Båð:kË?QÁ ê‹Ç4?H[Qw¹Ç?UÆUˆ9·?Xù}'s¬P>Ú›W|ŒÐ?4Ý>?Å¹?=#,§^è?;·÷O“#¿3é’€C I¿9ëýøºÆ\?R®ÖxRŠ2?eÿ}¼~ê>?W/É-|Öé?BÌBÐŸê¿EezÀ[¿Q±7L}?BC„€®žr?E¸œF‹ù¸?3#dñ6e?¿Rr”poÃ1¿ZEEùC«¿SÄ¼Þþ¿IPb•ß@¿]Ø´V„×æ??$ë½âC2?Uki×4?PJÿGUðT?½Œ¯kh?3“¶½ÔÏN?KëÛ
+„?BcWØÖÍP?QŸey”"³?Yÿ/|å#?ZZ0¬²ÒS¿(gµaXT? ôFW¿=å­áÛ¯¿bÁyÎ±€?»EbÉV¶¿7©mžË}‚¿Vð{ú(¿d. ùŽ>¿R­ k¼z?PO×Í%?QhNCÚ¿s	¶?¿LÞjóÙË.¿+RmXÿ»?^àŒË9Œ–¿6Ý¢NS.?„€™¡ì?½>²êdë¿XÁ Éj‡>¿b€’Lõ³…¿a-°Ãi9¿dªH³H<R¿/¤~ìŠ:Õ¿DýÌ%~3Ú?ªÎ4Œ‚¿[?=Ž¼3¿^öÝ¥<D¿`ÑßÃe¿MEÑtàL¿®SÔ¼"a?Hxe°íG¿µTÍ`6¿]®ÍtŽ’¿W%¹²ÂnG¿#W5^£ng?À0Š·%_¿UL²\Ðó¿SƒHh¡Ò¿P3]ps¿YmáÖk+¿;¢7šM:¿0òÿêiùÝ¿$,¥¥1¿Yù@`ºÙ¿_»oJ«¨¿3÷{lw”Ç?Ut?H…t¿'Î<N‚¿o"3TÅ\?;õ@¹ â¿P2ó@k¿Uy„»Ñ3>¿Vž<·0ý¸¿T.%Fd‡'>ÿÝØróì´?T-Ì®ˆ¿9­2OŽ¿C¹´ÿwm¿L™ß}0¿CSãe8ô¿Q_D-a«â>ý`îgN¿«ÊO&¿Hÿýv¿P¼%*W?:èáÅý?Z³ìó"ˆ ?R’vÏ§=¿WÑË[xúã¿1¤õÒ)Yc?B[ÿÃT³7?P¦h@ÏKl?Ri1¬8ó™?Q¿EÞVÙ?4Æª‹)ú¿T§/´GÄ¿YóÂ!ß9¿Xº…÷Wv(?5\_ªyn?Z¨“NW×í?NPœ¢œf¿+-êÏNj¿æÞëöÍh??·P[æéh?(èTHW´¿`ñŽ‹[q¿GÙb…~v                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                   32 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   32                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'SEG     '           / extension name                                 MJD-BEG =      59978.093733753 / [d] MJD at start of observation                MJD-AVG =      59978.347463213 / [d] MJD at midpoint of observation             MJD-END =      59978.600217072 / [d] MJD at end of observation                  TDB-BEG =    59978.09754985145 / [d] TDB time of exposure start in MJD          TDB-MID =   59978.351285751756 / [d] TDB time of exposure mid-point in MJD      TDB-END =    59978.60404574535 / [d] TDB time of exposure end in MJD            XPOSURE =              9276.57 / [s] Exposure (integration) time                TELAPSE =              9276.57 / [s] Elapsed time (start to stop)                                                                                                       JWST ephemeris information                                                                                                                              REFFRAME= 'EME2000 '           / Ephemeris reference frame                      EPH_TYPE= 'Definitive'         / Definitive or Predicted                        EPH_TIME=    59978.09677832332 / [d] MJD time of position and velocity vectors  JWST_X  =   -103665750.5061299 / [km] barycentric JWST X coordinate at MJD_AVG  JWST_Y  =    99338597.55868615 / [km] barycentric JWST Y coordinate at MJD_AVG  JWST_Z  =    42778115.03119134 / [km] barycentric JWST Z coordinate at MJD_AVG  OBSGEO-X=     -541324928.42312 / [m] observatory X-coordinate                   OBSGEO-Y=      1509892713.9642 / [m] observatory Y-coordinate                   OBSGEO-Z=      335543583.70221 / [m] observatory Z-coordinate                   JWST_DX =  -22.175053881291056 / [km/s] barycentric JWST X velocity at MJD_AVG  JWST_DY =  -19.115675949835094 / [km/s] barycentric JWST Y velocity at MJD_AVG  JWST_DZ =   -8.150916363330591 / [km/s] barycentric JWST Z velocity at MJD_AVG  OBSGEODX=  -152.53302873458415 / [m/s] geocentric JWST X velocity at MJD_AVG    OBSGEODY=  -133.37992398680856 / [m/s] geocentric JWST Y velocity at MJD_AVG    OBSGEODZ=    77.99768235978787 / [m/s] geocentric JWST Z velocity at MJD_AVG    PA_APER =   240.92057745005968 / [deg] Position angle of aperture used          VA_SCALE=   1.0000146035495219 / Velocity aberration scale factor               BUNIT   = 'MJy/sr  '           / physical units of the array values                                                                                                     Photometry information                                                                                                                                  PHOTMJSR=   0.4020000100135803 / Flux density (MJy/steradian) producing 1 cps   PHOTUJA2=    9.448781312080854 / Flux density (uJy/arcsec2) producing 1 cps     PIXAR_SR= 2.11539874851881E-14 / Nominal pixel area in steradians               PIXAR_A2= 0.000900000000000000 / Nominal pixel area in arcsec^2                                                                                                         Information about the coordinates in the file                                                                                                           RADESYS = 'ICRS    '           / Equatorial coordinate system                                                                                                           Spacecraft pointing information                                                                                                                         RA_V1   =   188.92909339752794 / [deg] RA of telescope V1 axis                  DEC_V1  =   62.207783297384026 / [deg] Dec of telescope V1 axis                 PA_V3   =    240.7783714626429 / [deg] Position angle of telescope V3 axis                                                                                              WCS parameters                                                                                                                                          WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =     -1791.3566292753 / Pixel coordinate of reference point            CRPIX2  =       1378.456447261 / Pixel coordinate of reference point            CRVAL1  =      189.11491709001 / [deg] Coordinate value at reference point      CRVAL2  =      62.267305895902 / [deg] Coordinate value at reference point      CTYPE1  = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2  = 'DEC--TAN'           / Declination, gnomonic projection               CUNIT1  = 'deg     '           / Units of coordinate increment and value        CUNIT2  = 'deg     '           / Units of coordinate increment and value        CDELT1  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  PC1_1   =     0.48602153879109 / Coordinate transformation matrix element       PC1_2   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2   =    -0.48602153879109 / Coordinate transformation matrix element       S_REGION= 'POLYGON ICRS  189.154333751 62.338611480 188.963898937 &'            CONTINUE  '62.289305231 189.075421063 62.196233416 189.265449557 62.245387432&' CONTINUE  '' / spatial extent of the observation                                VELOSYS =            -4387.78  / [m/s] Velocity towards source                  EXTVER  =                    1 / extension value                                WCSNAMEA= 'ARCHIVED_WCS'       / Coordinate system title                        WCSAXESA=                    2 / Number of coordinate axes                      CRPIX1A =      6412.6433707247 / Pixel coordinate of reference point            CRPIX2A =       6079.456447261 / Pixel coordinate of reference point            PC1_1A  =     0.48602153879109 / Coordinate transformation matrix element       PC1_2A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2A  =    -0.48602153879109 / Coordinate transformation matrix element       CDELT1A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CUNIT1A = 'deg'                / Units of coordinate increment and value        CUNIT2A = 'deg'                / Units of coordinate increment and value        CTYPE1A = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2A = 'DEC--TAN'           / Declination, gnomonic projection               CRVAL1A =      189.11491404787 / [deg] Coordinate value at reference point      CRVAL2A =      62.267302958416 / [deg] Coordinate value at reference point      MJDREF  =                  0.0 / [d] MJD of fiducial time                       DATE-BEG= '2023-02-03T02:14:58.596' / ISO-8601 time at start of observation     DATE-AVG= '2023-02-03T08:20:20.822' / ISO-8601 time at midpoint of observation  DATE-END= '2023-02-03T14:24:18.755' / ISO-8601 time at end of observation       RADESYSA= 'ICRS'               / Equatorial coordinate system                   VELOSYSA=             -4387.78 / [m/s] Velocity towards source                  WCSNAME = 'TWEAK   '           / Coordinate system title                        WCSTYPE = 'user-defined'                                                        CD1_1   = 4.04942827269473E-06 / partial of first axis coordinate w.r.t. x      CD1_2   = -7.2826750288535E-06 / partial of first axis coordinate w.r.t. y      CD2_1   = -7.2836595876750E-06 / partial of second axis coordinate w.r.t. x     CD2_2   = -4.0505338831809E-06 / partial of second axis coordinate w.r.t. y     ORIENTAT=   -119.0794225499403                                                  ZEROPNT = '26.51   '                                                            LONPOLE =                180.0 / [deg] Native longitude of celestial pole       LATPOLE =      62.267305895902 / [deg] Native latitude of celestial pole        END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -64 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   32                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'RMS_ERR '           / extension name                                 MJD-BEG =      59978.093733753 / [d] MJD at start of observation                MJD-AVG =      59978.347463213 / [d] MJD at midpoint of observation             MJD-END =      59978.600217072 / [d] MJD at end of observation                  TDB-BEG =    59978.09754985145 / [d] TDB time of exposure start in MJD          TDB-MID =   59978.351285751756 / [d] TDB time of exposure mid-point in MJD      TDB-END =    59978.60404574535 / [d] TDB time of exposure end in MJD            XPOSURE =              9276.57 / [s] Exposure (integration) time                TELAPSE =              9276.57 / [s] Elapsed time (start to stop)                                                                                                       JWST ephemeris information                                                                                                                              REFFRAME= 'EME2000 '           / Ephemeris reference frame                      EPH_TYPE= 'Definitive'         / Definitive or Predicted                        EPH_TIME=    59978.09677832332 / [d] MJD time of position and velocity vectors  JWST_X  =   -103665750.5061299 / [km] barycentric JWST X coordinate at MJD_AVG  JWST_Y  =    99338597.55868615 / [km] barycentric JWST Y coordinate at MJD_AVG  JWST_Z  =    42778115.03119134 / [km] barycentric JWST Z coordinate at MJD_AVG  OBSGEO-X=     -541324928.42312 / [m] observatory X-coordinate                   OBSGEO-Y=      1509892713.9642 / [m] observatory Y-coordinate                   OBSGEO-Z=      335543583.70221 / [m] observatory Z-coordinate                   JWST_DX =  -22.175053881291056 / [km/s] barycentric JWST X velocity at MJD_AVG  JWST_DY =  -19.115675949835094 / [km/s] barycentric JWST Y velocity at MJD_AVG  JWST_DZ =   -8.150916363330591 / [km/s] barycentric JWST Z velocity at MJD_AVG  OBSGEODX=  -152.53302873458415 / [m/s] geocentric JWST X velocity at MJD_AVG    OBSGEODY=  -133.37992398680856 / [m/s] geocentric JWST Y velocity at MJD_AVG    OBSGEODZ=    77.99768235978787 / [m/s] geocentric JWST Z velocity at MJD_AVG    PA_APER =   240.92057745005968 / [deg] Position angle of aperture used          VA_SCALE=   1.0000146035495219 / Velocity aberration scale factor               BUNIT   = 'MJy/sr  '           / physical units of the array values                                                                                                     Photometry information                                                                                                                                  PHOTMJSR=   0.4020000100135803 / Flux density (MJy/steradian) producing 1 cps   PHOTUJA2=    9.448781312080854 / Flux density (uJy/arcsec2) producing 1 cps     PIXAR_SR= 2.11539874851881E-14 / Nominal pixel area in steradians               PIXAR_A2= 0.000900000000000000 / Nominal pixel area in arcsec^2                                                                                                         Information about the coordinates in the file                                                                                                           RADESYS = 'ICRS    '           / Equatorial coordinate system                                                                                                           Spacecraft pointing information                                                                                                                         RA_V1   =   188.92909339752794 / [deg] RA of telescope V1 axis                  DEC_V1  =   62.207783297384026 / [deg] Dec of telescope V1 axis                 PA_V3   =    240.7783714626429 / [deg] Position angle of telescope V3 axis                                                                                              WCS parameters                                                                                                                                          WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =     -1791.3566292753 / Pixel coordinate of reference point            CRPIX2  =       1378.456447261 / Pixel coordinate of reference point            CRVAL1  =      189.11491709001 / [deg] Coordinate value at reference point      CRVAL2  =      62.267305895902 / [deg] Coordinate value at reference point      CTYPE1  = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2  = 'DEC--TAN'           / Declination, gnomonic projection               CUNIT1  = 'deg     '           / Units of coordinate increment and value        CUNIT2  = 'deg     '           / Units of coordinate increment and value        CDELT1  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  PC1_1   =     0.48602153879109 / Coordinate transformation matrix element       PC1_2   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2   =    -0.48602153879109 / Coordinate transformation matrix element       S_REGION= 'POLYGON ICRS  189.154333751 62.338611480 188.963898937 &'            CONTINUE  '62.289305231 189.075421063 62.196233416 189.265449557 62.245387432&' CONTINUE  '' / spatial extent of the observation                                VELOSYS =            -4387.78  / [m/s] Velocity towards source                  EXTVER  =                    1 / extension value                                WCSNAMEA= 'ARCHIVED_WCS'       / Coordinate system title                        WCSAXESA=                    2 / Number of coordinate axes                      CRPIX1A =      6412.6433707247 / Pixel coordinate of reference point            CRPIX2A =       6079.456447261 / Pixel coordinate of reference point            PC1_1A  =     0.48602153879109 / Coordinate transformation matrix element       PC1_2A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2A  =    -0.48602153879109 / Coordinate transformation matrix element       CDELT1A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CUNIT1A = 'deg'                / Units of coordinate increment and value        CUNIT2A = 'deg'                / Units of coordinate increment and value        CTYPE1A = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2A = 'DEC--TAN'           / Declination, gnomonic projection               CRVAL1A =      189.11491404787 / [deg] Coordinate value at reference point      CRVAL2A =      62.267302958416 / [deg] Coordinate value at reference point      MJDREF  =                  0.0 / [d] MJD of fiducial time                       DATE-BEG= '2023-02-03T02:14:58.596' / ISO-8601 time at start of observation     DATE-AVG= '2023-02-03T08:20:20.822' / ISO-8601 time at midpoint of observation  DATE-END= '2023-02-03T14:24:18.755' / ISO-8601 time at end of observation       RADESYSA= 'ICRS'               / Equatorial coordinate system                   VELOSYSA=             -4387.78 / [m/s] Velocity towards source                  WCSNAME = 'TWEAK   '           / Coordinate system title                        WCSTYPE = 'user-defined'                                                        CD1_1   = 4.04942827269473E-06 / partial of first axis coordinate w.r.t. x      CD1_2   = -7.2826750288535E-06 / partial of first axis coordinate w.r.t. y      CD2_1   = -7.2836595876750E-06 / partial of second axis coordinate w.r.t. x     CD2_2   = -4.0505338831809E-06 / partial of second axis coordinate w.r.t. y     ORIENTAT=   -119.0794225499403                                                  ZEROPNT = '26.51   '                                                            LONPOLE =                180.0 / [deg] Native longitude of celestial pole       LATPOLE =      62.267305895902 / [deg] Native latitude of celestial pole        END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ?avœJD™?a‡·‹Í?a|Ò*’²?a7ß¾>?`Æ™
+1É?a«Š/‡X3?bg >Ù’ë?b"5¯z$z?b4™þ?a¸:ž?aÁúä_?aàÓ’_a?b=á‘ëÓŠ?a9ìHe?aøÏa6?aµÉVö?bG6©`‘?b°tBR‡?bZÈCª:?aÌìÓµ((?ao…XOa?a²¹,û¢ï?b{#•À¡?b7ŸmKEà?a²;7íÍÝ?aˆm~Ç?aü´£äö ?b% %?a†Aþ‹
+7?a)ëø‡4—?b4Æâ?E?a¯Ó÷?aòÔýêÓø?aÞÐT£ I?a°,º9í?aUëÊ#×?a/„x¯?a~éd?a—‰ü”Ä¸?aÕžÙ¬‘ð?a›F0î¡?aHÑ<<?aµÛçŽ:Í?a[…ŠÃX?aI:–“?a‡_ØØw?aì52…zE?aå©¡æ¤?aÝÜ•k•Ä?bÕ»ºÍN?cX’½û%?b,MÎl?aôÍ‹i¬7?aÚæ­‹†[?a¦Îâîy?aÍ…êž?b)‹ÍKðI?a4üW/Tü?a´¦Hð«?bùá…?aL¨”X}?a’¾‹on?a÷bHµ#?a“¡äRL?aÊo„¬K?a”¯¦a<?aAÛ‘qy£?`ÿ€€³?a0*7Âð?a|˜ÔNMì?bZ¢ïØC?a÷Ü=¹Þ?a„ÑiHÔ?a–é§?amæ°#VR?aS,-„š;?bÖnÕß?b1šÉ ßs?a=~¶1"?aùóßš?b#ux*\×?bCÜgg·?b‰jÌ)?b#'^Vx?aÕ×yt¿?b3ã,}—?a_sº.—“?b~šõ?b•-rãÑx?a¨ÿé@„)?a¥Ñ›Ã3?aÔ±îˆ¿à?ac«¹â'?a”B·©?a	 ½E?aÞ>‡?a‚Ã3¾ —?a"Àýîy?aÅ,É?a2ÔBL¹É?apwm5¦Í?a8Ó“ ?aÏw:¿?bS<
+§I?a|âXGP?btà‹ª0?a	ã½¹%?`ÚÙìäß:?a¡TP˜~?aŸ¾†>Ëx?aMu¥3I´?bv•kŒ=?b9dÒV8?aâÓƒ0?aÕä÷üÅ?aé¼ÉÑà?bh«EŸ´a?b¾cÝ—J?a³³ùÒ©†?anñê<?aÃÁ¬B×?b"/ÄþA?b#¶_¶Üˆ?atvT8I?aÐ—×M_‘?a•Ž]9ê?asrÔ{M?a™¢¥¼	?adÂ)Ò?a6Vï¾¾?a #!óŽ?anEX>Aû?b.5Ö"?b‚D–lJû?aØ¯™˜Ý?`÷^£ˆÚv?avhnIL ?ajvd·×ð?a'Š?À?aDosÐµ?a®o­eN~?a¬îŸž4?aŠ$´&U'?aE-`@•?a¼ä>sg?aéƒ>.?a…p(	ÒD?a¯“qR`?aêu"’¨Ø?b:òÄZß?an’cˆD?`ñÏUŸ¤˜?aqäZ¬?bd¦(J¹?bRu» 	?a“.¦/ö?bªõAÜ&?b=fÃS?a»ý,ãÍP?bJL¥08?aÄ¬x‰c?aF2G0.ò?a‡y!}T?a0ùÛ±Ž?bS%g†Ý?b<Q–˜°?aÌ&RÝßþ?a<Ú—¥§N?a÷ßøiµ?aÀØF>à?a¬ŸånãÇ?b¦×¡ò¿?a©÷÷#9?a§Z.¸ˆy?bS?aò9k‘ÜK?az</ÿ]â?bò9¬‚?aŸåŒèôg?b3G?bî*ÖÌH?a·îxÝeH?atÔŒ‘ˆ‚?aƒAärv?a‡\Ë5?aéÝÃBZÝ?ae)ž}Öu?a)JÜÜ¶²?aÛôÞ€@?b±<Ó°OŒ?ba¯ô²?a¦”"^å?aMìæ•?aÛÅÖ¾€?bˆî3+•W?ay‚È–Jb?b¸ÖƒnÈ-?a»Ôa½?aÄ<[¬?aë¾\F*ò?a¯tÌ%Ï¢?a™±ï„–?at2Œp9?aÇ/õ¹öÎ?aBß…ãå?a»8kr·W?aýÝÊÞ¸p?aÂ Ôf=z?aêM‚ÞB?b¹1ë?aŽ$è F¿?a‹²4æ÷?b&äéÙà?b¥­M'V0?bsÏ­p³x?aäpÌ<°A?aXZMQ“D?aÆ	Q?¿t?a”¸+?-ð?a‹¦º.p¸?a5Úqzu?`üaƒG!?b16êÞî?aZ fÉ)`?a³óþª?aÇñ_Žc?aóÛ<½Xœ?aŠwfÑZn?a±ÖmSQ³?ajåÊ§[°?a5×Æƒ’?aÏå-¿ÅF?aîÒE%1?aÑ9²?äÎ?a”^Ç”tï?aQ»ë@Ä?a\Íñ½?bÎ~îá?aø¼)Wv?a¤Ø2¡	Œ?aR½Ký¾?a~Nk‚„"?a‰·õH€µ?a{(i2ô?aiåw-Ôc?aƒõÈPg?b1ùsãë8?b"Îæµ?akç`1aÇ?ašóCÜ”2?a«¹ÏE(?ayô!*'?a«4­^pA?bFãíþú ?b‚„7?`Ä=j\?a,u]A?aBk9Ó’?a0ÁÁ°Ü
+?a›và˜b?bE{³7??ažPR›-¸?b/&ü‘Š?aŠEwç:‚?aœOûÙ>O?aÊ0}ó?b¥l?aW”I2‚N?a4S70Ú?a®PØ¢?csgÎÊˆ?b*ð^»y?ah•aU'³?aC„l‹?a%ÕæÂ?aÀ‡OÁž?b$5©|%/?`Öc×F?a@XVÔ›?aÝÖs ^j?bU•o?aë¾}[?aç~ÞÒû?aŽÐ=®?a"LtÇ	?bsx<Ýy¶?aÀ‰—ˆ¦œ?aªjzR×”?a&Âì;:?a‘Œ|ôí©?aÝ; jó?bÕâ˜OvW?bDW‹S{?ašÒÑ„Œ?aÅ³„ÌˆT?alðñ` ?aÁØûe ?atP;?`ñüùdRa?aÍ(åÞ´?b(VÌÂ?a°‚C$nZ?a¹0ŒUã?a‰ÓÇ)/?`Í®Q2Á?a¹s±À÷`?aXëÔ\Í?aŽG‹u­c?aö! Ð§?aX¬–†€?a´ÓG>™z?aÂJfÈ¸?aŽ×FQ?aÂsY@gÂ?a¸rïCó?a´®Þ2b ?a1›å»U?a¤÷àö…L?a(t½£7g?bbù½¢8C?a´À¾ƒ|F?adóz…ë?aà$TÁ?c@•‹n[¾?bXÎõü?aêIs¥êÄ?a”ÖRžf?aÿÒ	åh?aêÒØµÔ?aåy?a©ÕâkÀ?a¯Ù_ˆv?bÁxÔUdð?a¦°­«©d?aÕÌíà
+¦?a3{W–é?aOö¥õié?a£‰on?a’ó'¬Q½?a‰i)Ö2¸?`n:µé·z?a„(¶+jE?aØ"ô¤™?a•Ð;´?a—Dì–&ò?aYf3íÍ·?a}ÐŸ8µ?a«:}EÜ<?bÊI‚é=D?a·£/2ðM?a`¨—.$M?aò‹lÏÕ?b:²€«o#?ag÷x~£°?a ctcH©?a”\OMÊ?aðJ×ª®?aÊ[¹ã)?a°ˆ¿?c$—±Xi«?b:.Ü§º?aûO£l×F?açvóYÄ?aSÜz!¹Ô?adDÖËÎ?`èN¸¥ì?a’[ÔÄ@5?a-thÁ1ø?b”u¶?auWó®#?a:lì$ð&?aÖ`”ï´?a‘:G`T@?a±_0Î5?a†™ÄIQ¯?a´<„ƒë?a@0ù^–?a1{ií†µ?aÐT{Ì—?aœÇÐ¬¨Y?aôßÏŒ?a¯ÃŠÌÁ”?b¦ç|­ÁŒ?bår0à?aîÃß#æ?a‚‰’H²?aÙ»‹R?au¡¼4§n?a/@b½Ò7?a#·£N9D?a`Ô52¡?b?Ž
+­†D?bK[nãYX?bÒþ_ä?a±$mp
+È?aÝË#ÑV?a…:²©L¾?aÚÖ|Òj?ašºC`˜ã?a\oLËXv?a¨c7ù‚?a@Câè\*?a]x ü´?bVõá\P¿?b 7OzA|?by÷J¹£?a–5!èR?aŒ GÁ?a=Ñ¿Ÿ|?a’'^X,?aPóŠ˜ÞO?a3á÷ö÷-?a’ÌÏ .ê?a<ì^]­«?aÂrA\?aÃ °ô•ú?aã¼4µ-?aµÆÂ¯¨‡?aÙ-cÍ?a%þIâ~é?a®~‘`Õy?aÁ
+YUò«?aVöÎ
+?`Í‡šï?aoN‰bŸˆ?bNYØ­Ø?ay LË£?at{®˜R?aŸŽ$í?aay?aP=îf?b&†ºx@ø?ae_üM˜¨?`ˆÎ_´?a|Ã›ÅÆ?`ëø6„
+º?a‹ó4 w³?aäúfU¼?b1Ö¼7?cwæ‘‰?aÑWa^X?aésÚºÒ?a§ûÍ0L?bff7Â?b-ƒj},â?aˆ/J6ü?až¾ËCîê?a}\	‹«]?a˜eWK\?b8FY°Bª?bT„-ÿå?a[±Uƒå?b@]g5¸‘?b4©™å?aÂ™Çi‡¶?a0Ëwé?a/ëÁBV?aDPW}R|?a7ü°?aØqŠ@?b@VÊmÿ¸?aCÚUÊ”?aZV“Sh?a£Úl'Û?a…3íâ>?at¦óË?b7³ýŸšÈ?atáx›gØ?b+@*–¯?b0ßfB°x?aæköf-H?bFC?baä|W?a®Î`Ã?a‰BƒîA?bYZ3ÿä?bT§™)Ó?aÊø'o0?b%ŠT’DÇ?aýÓ}?ag<«k?b#é’1X’?aóf{g¬÷?a¢óG½_€?aT‹öF?b>z»ûÄ?a×Ž<=Ü>?a–¤Ap@ù?aÎý…#ß?`ü,›MŒ?aõ]ô·¼b?bŒÌ[°t?b‘6‘Ow?a/£Ó·Šd?a=Í.Kô<?aDÛzø+?aWÛåÉÎ[?bT6mE¨›?at<m?ar¨,ç?by‚%¹Ü5?b{Ô_ÐGß?a§°¨4”&?aj4åý?ag}ˆ8¿?a+Üo¬?amD6(‚?aËh¢»¡?aóÐç&xˆ?b&zOP°¦?b5î|jé?cPÉÃc‹?aíçÄ8[H?awþ"\ø`?a¦Œõ8?b*;§Jò?b,Ý‹n?bBHüod?a» \’Éù?a3®Jt?a¦Á»¾ª?anéõGï?aßþöPm"?b8Ñ[Ë¸?bêªÞ\R?a»öÌ­w?a{fQÝ-?a?ez ó?a7˜dT„ ?aãs9±?aIë†ß(ž?aHíªS?aG:XÊ?a‡”ã”@Ú?b?¢ñ€Ëe?añ Qð:ð?aJ;ù™\?`Æ©s;cŒ?aÞ‡#v#Ý?a¤Vt9Í?a}!Nþ}&?b‰êëöd?až„›Ý7t?a¸õ#¤Ô7?a¹Þ·^_?a<îá¸ë?aj•v]óU?a¯·þ¼H•?b1,¥“?boèvå?b1~ËÌå?aÏj_‘?a˜£Ì?aæüT¥ï?aÈþõW?aÌ!`AY?bgy›d{?aÚp%Â,°?añ‡Ø53g?ag-Z1†?abN’ß0?a6q´0Ï?agu@Ö}»?bj è
+?a^9.žx4?aŒÐTwc¢?aü¶GÇ‰â?bCÑ:ë?aô×Uó}«?aÆB¨{€?an[9Fð?alâWÐ?aÃøÄZ„?b
+&w‹ŸŽ?a…d#¶é
+?a=§âƒò?a¥]—iÞ[?a³T§.7]?bGIŒE1?a|É³¢»?b(ijù¬?b¹nj8þ?býÝû°?b!â9æÁ?a¢ÈÄñÈ›?a¨´-‡ø?a¡bÈ½?Ÿ?bÕÃÍ“Ø?aæóiNû?a(Ù“Œ^?a..Ñ2t2?auÄ(½é]?a»´§Õ:?a!,/}ïQ?a}ð„iæ?bþEú,eÁ?a³ÀNŒp#?a¢w'i"?a¬â<˜n,?aÆI³­í½?aZÌñ„Ï?a¦ýLV)n?a"Æ4	;?a$_ë¤4Q?aÑâºJÚg?bTœ“Z?aŒWò… Ð?a·dXxÝ¥?a™„‡òÝ?aˆ&Vb?bBí
+,?båÀ)[~?bY{D3À?aêý€þo?aÍå­š?aÐ*}v,?a™NŠ±¥B?aëñw*â¿?aìÁ„@=;?aÝ®å¾3å?a«‡ëöm?a‡ÈF/?aKä¡¹?a)?-UŸ?aj¼,T?a`…i¡gÆ?a¬>¢5e%?aËòs QÑ?aö[•çÿ?a—ÖxÜf?aõYÓë?bGç5Ë_?aÉæXƒ:?aìŠ¼a¢?aˆ#'MW?a´2ø‘[?aä®ØlWg?aèÞ-ÔñÎ?bB¶#€?bjDoë?auƒë²pÏ?bˆ ØB¯ ?azÔ»w?a¡DïŠÆ?bj°k¸Ï?b¾=K1?aàÖž·âÝ?abÌrÖ¾?axŸNº•?a!µüW•?aØ¾–/Û?bP‚%å?aÌƒÍ/?aþ•3jlÏ?aÀÊÍ,Q÷?a² z»c?aK-2“»?aFpõ’N?ab—ET-j?a­Ø~E?b¨ÂÚdû¦?a3œxò?ax>Á…?a|„¨j3;?aÆuñˆ£„?b7Ìh?Œ±?aNÃ\øò?aÁi¤Ó ?a”Ô¸;?a}ÿƒ2B?bA¿m?ajù¬ƒY—?`êêMžËû?aÃEC“³+?b¾Šl²Þ?bc¯%üä?aËM@|?a™]K?b¬¦Ö5ê?b.ÐDÝZZ?a¿Ý„þo?a#˜†ï& ?ay¼‹$‚Œ?aZd¶Ÿ6ö?a™Ðsªôn?aªð xå?b0«#QBÈ?bSâ[ºŸÑ?a¬IDÔ?aÜƒÂ;?a–žo¥)¶?bW©’îx?b¯>±Ü¬i?aà[î)Ìd?aq™`@y¹?`•Œ>µç?a ÎùP˜”?bG¦ÇÑQœ?bô„.×?b	6h¤¶?ar/F´­š?a£§Ëã= ?aáj`7i?aåüÛÔ¶w?aö›sH6¿?a¢°f+³r?b²àñX?b›+À5wf?b•+Áaº%?c3ƒ¼?bÙÄauÙ?aÞ½êÒp?aÔÿmY?aQ€Ã±
+Ý?b>&Ã?`îhé:Øš?am‡c*Ï?b*h¢fr?aî­öê?a_¤èmÕ?avìÔ±•¤?b'¨`yd?ará¯n?b1˜mDU?a±6§f—?a4²´8•¯?aØ!ÏÉÒ?a´xú`<Ù?akWx ¬-?`Ä•X"?a¬ðxå?aé°‡LD?aÐ¾éº?az ,Ì~?a¸‚!}?ð?b>Ë“,]?aó 4Š$¸?båË½©|?b–Vdƒ?a‹?GRÈ?a{N°už½?b­ÁÜ”$1?b€¥òõI?aœ2î(jÕ?aE@$±?am[I¡b?aÐt œ¥{?aä¸Võ?a»'äò?a‹.7Ò2?aÄ|!ï•?aB€ÃA?aQ°ˆ’4U?aJæ¿Ó_[?a}eÑ¤Ïâ?avçf*ñ®?aÄoZ¤Y?aß¸¯8?b
+ýØAü?bqsu(?b?Ô”=?a}²5:è?aÃÊ÷i‡?aÒ)æ÷@?bòµ¡?aêÊ)²n?a‰Ð~ÿö?aåqZ¯hl?`ùO¢Zª?a.ð„ùÒB?bØ3_ê??a²Ò_7á?aÁGÛ·.ö?bcû‚üÓe?b8B‘ß¥…?aÖðeEwô?b
+_÷žá	?a¸xs.ô?a®#*=²?b#?3‚?aóMTÍ(Ö?acfÊ?aÉNþˆB?a1!;üG?anùšÚŸ6?`ú ZH„_?ahõb„þC?`Ö—À@?aDGŒS¨?aÅV¥xÁ?a~.Öt&?aÿâ‘íòU?a‘V\UÉ?aró*Ê2Þ?bP²Ÿ?bD»Ê¨Oá?aæ`1ï_?aµi¨Ì&Ñ?aÓ‹‘Ëfi?bKWÁfø?aš:þ3³F?ayt#µD?a*ìWŒQ?aEnø`àØ?aãSxâXP?ac¸š;Ì)?a‡`Œt•?a‘?D÷‚?a¶4‡ÉÀ?aÎ„]ÖÛc?a£Ô×•N?b³ÉÀç?aÜéÁ¡Æ”?aH·<E?a™5W’¡Ñ?aOYàšÇŽ?ap<¤þ?aK˜>¤?a£öÞðKt?aPÁã¢LM?aòä1Ç?a~:*ä>s?`¿jÞäÇÎ?b0<Ïí?b§(c)ç?agÁ÷¡]?aÃ·l•Ž?bƒËn
+ëA?b!ÝnÌ³?a¾×,õ?bêa­àM?aÔ±|æJÙ?bNƒ–: º?a§Ë0ÁS^?a‹$ò?a…"ÂFü?aÌGí|?a‰+šXßÄ?a«n1ô/Á?agý*>K?aw9eõë…?a”%²×¡%?aÛ"Pÿ±k?b±+-D?aÍ.]å¯m?a¶ð–ä?aÂuM‰ž?aéµú†?aµÕYIv?a_Ìîõ?a$›¡ûn?a‡ŒGƒ>†?a°Þ'ù??az`#È?a¯Ô9Az6?b#;›2ÿé?aÓ›e”39?axÓ1¦7G?aVO˜Ùh?aô…n³É?aî|Áê³†?aéX²=¿Ô?bÂÅ_Âÿ?aÞtÎ@ì¦?b:4ìvãŽ?a¸N!}µ?aÜ‘X´?aØÎ·dŠ?aÄ1ÊVD?aEXUrž{?bŒæÝ?a]²ÁIœß?aTAÚ¦?a›l°8?a²øÏœ|?a“Rs{?b>)ÝÝ»æ?bƒ±l`Þ?aØG{˜~›?aãp£žru?aéšt‘J?aª7âm?aE-Hjç¹?ajØoƒ;õ?a~aT,©…?aâuÛ‰—?bÂ°ü> ?b2 •,œ?a¶.N(ö+?a|H€þ?aL38ö§?a}`L¿à?aèŒY¸¬”?a´n«¶Ñ?b+åAÆ5?b*¡‚—ñ?ad+˜°ŒÙ?aTÃ€sS?báëR`W?aÈÁÑVÏ?a~2ô¯à?a[¹³€Ä?an”`–?õ?aP.Èqq?a§Ì?M"ï?b©ëoó?bY'Uc?aBö¢Òº?a¢ $îß;?aÂËK\äÚ?a§v%ÒÆ`?a":ã‰p?a+­ê1Z¶?a,±[oN-?aquÆßcâ?a#íhÙ?aZ:¤=•ë?aµðÕÙsá?a±6`oFÍ?a¨xiÚ]?aÍPN WO?aª…8L
+?aW¹±p?ašLÌXg?a=IF!?a‘€	oPË?b$ G'¿?bVf<?av9¸¬	ø?aÁ.™É;?aƒ´ëªu?a“KR{ë‰?aÃòÓ¦)?bFø4¼à#?a$ÒjQV?aZ½QÒn‰?a2É÷‚ûu?axùTFÑ?aýè÷^õy?a›`8}Ñ×?aw«“²Û?b€Ló¶ý?a¹ðŽ§h¨?ae*ÿíÓÞ?`úT®lµ•?`Ë)v0y­?a1t¹äØ?a^^Ú3â?a9ÍýX—»?a¾'\z%0?awCÒl‰?`ù´Buô?aÆ$;É-?aèt¸„’¸?a‘§
+NoÛ?aëÝË[íÜ?a¢º€e„?bl¥ÈÞŠq?arÎª«?aIdÙ<´?`üéÁ%ñé?aîH|î›e?bž}‘¿÷¡?bOWQ™5Š?bÉÖâKýÉ?bJ ´¥í?al; a×?a£ÃãÆ¾S?a{?øZ.£?aqQù;l®?a"ËÆ­¾J?a[ýáéÐ?aQã{æÿþ?ar‰“É?a—IŠW?a~çS¯2?aƒ/§^q?ax‚ýöl?`Ó*4%?aXõ“ß?a¯dÅ§­?a©’õ4U?b¸uuk"?bPaÞÙ?bWIN½ ¬?aäÜijUé?aå-äáÏ”?aVoªJ\?aH„Ê¶p?aÌ ž(—Á?aä÷ÛŠÌl?b(¥®I¬Á?a…¹iÜ?aÛKÁ¯j?b‚ŠH‰A}?b¿K…TðY?clj{¹?bU®o(ìÅ?aˆ€÷P$<?a† K$T?aï¯TËc?aã±|ô]?aF I¸Ëy?axÿŸv?af‡q»ˆ§?aî×o~¥?a±<Êµ­?aŒo.ì³*?aåÂNNSÎ?a©ßÔ/æ?a[÷:Î3e?a–ß–ïuç?bvÙ3ã€?b%ôÇ’C?c V{~ú?b+ë¡ÓÑ?bOŽïÇÚ?aÔªÞÎµË?b3¨}Ÿ?a—&9}‡k?a…0ÃËZ?aõÞ7{3è?a«ìl`û?bO}2ëc                                                                                                                                                                                                                                                                                                                                                                                                                                                                XTENSION= 'IMAGE   '           / Image extension                                BITPIX  =                  -64 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                   32                                                  NAXIS2  =                   32                                                  PCOUNT  =                    0 / number of parameters                           GCOUNT  =                    1 / number of groups                               EXTNAME = 'WHT     '           / extension name                                 MJD-BEG =      59978.093733753 / [d] MJD at start of observation                MJD-AVG =      59978.347463213 / [d] MJD at midpoint of observation             MJD-END =      59978.600217072 / [d] MJD at end of observation                  TDB-BEG =    59978.09754985145 / [d] TDB time of exposure start in MJD          TDB-MID =   59978.351285751756 / [d] TDB time of exposure mid-point in MJD      TDB-END =    59978.60404574535 / [d] TDB time of exposure end in MJD            XPOSURE =              9276.57 / [s] Exposure (integration) time                TELAPSE =              9276.57 / [s] Elapsed time (start to stop)                                                                                                       JWST ephemeris information                                                                                                                              REFFRAME= 'EME2000 '           / Ephemeris reference frame                      EPH_TYPE= 'Definitive'         / Definitive or Predicted                        EPH_TIME=    59978.09677832332 / [d] MJD time of position and velocity vectors  JWST_X  =   -103665750.5061299 / [km] barycentric JWST X coordinate at MJD_AVG  JWST_Y  =    99338597.55868615 / [km] barycentric JWST Y coordinate at MJD_AVG  JWST_Z  =    42778115.03119134 / [km] barycentric JWST Z coordinate at MJD_AVG  OBSGEO-X=     -541324928.42312 / [m] observatory X-coordinate                   OBSGEO-Y=      1509892713.9642 / [m] observatory Y-coordinate                   OBSGEO-Z=      335543583.70221 / [m] observatory Z-coordinate                   JWST_DX =  -22.175053881291056 / [km/s] barycentric JWST X velocity at MJD_AVG  JWST_DY =  -19.115675949835094 / [km/s] barycentric JWST Y velocity at MJD_AVG  JWST_DZ =   -8.150916363330591 / [km/s] barycentric JWST Z velocity at MJD_AVG  OBSGEODX=  -152.53302873458415 / [m/s] geocentric JWST X velocity at MJD_AVG    OBSGEODY=  -133.37992398680856 / [m/s] geocentric JWST Y velocity at MJD_AVG    OBSGEODZ=    77.99768235978787 / [m/s] geocentric JWST Z velocity at MJD_AVG    PA_APER =   240.92057745005968 / [deg] Position angle of aperture used          VA_SCALE=   1.0000146035495219 / Velocity aberration scale factor               BUNIT   = 'MJy/sr  '           / physical units of the array values                                                                                                     Photometry information                                                                                                                                  PHOTMJSR=   0.4020000100135803 / Flux density (MJy/steradian) producing 1 cps   PHOTUJA2=    9.448781312080854 / Flux density (uJy/arcsec2) producing 1 cps     PIXAR_SR= 2.11539874851881E-14 / Nominal pixel area in steradians               PIXAR_A2= 0.000900000000000000 / Nominal pixel area in arcsec^2                                                                                                         Information about the coordinates in the file                                                                                                           RADESYS = 'ICRS    '           / Equatorial coordinate system                                                                                                           Spacecraft pointing information                                                                                                                         RA_V1   =   188.92909339752794 / [deg] RA of telescope V1 axis                  DEC_V1  =   62.207783297384026 / [deg] Dec of telescope V1 axis                 PA_V3   =    240.7783714626429 / [deg] Position angle of telescope V3 axis                                                                                              WCS parameters                                                                                                                                          WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =     -1791.3566292753 / Pixel coordinate of reference point            CRPIX2  =       1378.456447261 / Pixel coordinate of reference point            CRVAL1  =      189.11491709001 / [deg] Coordinate value at reference point      CRVAL2  =      62.267305895902 / [deg] Coordinate value at reference point      CTYPE1  = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2  = 'DEC--TAN'           / Declination, gnomonic projection               CUNIT1  = 'deg     '           / Units of coordinate increment and value        CUNIT2  = 'deg     '           / Units of coordinate increment and value        CDELT1  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2  =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  PC1_1   =     0.48602153879109 / Coordinate transformation matrix element       PC1_2   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1   =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2   =    -0.48602153879109 / Coordinate transformation matrix element       S_REGION= 'POLYGON ICRS  189.154333751 62.338611480 188.963898937 &'            CONTINUE  '62.289305231 189.075421063 62.196233416 189.265449557 62.245387432&' CONTINUE  '' / spatial extent of the observation                                VELOSYS =            -4387.78  / [m/s] Velocity towards source                  EXTVER  =                    1 / extension value                                WCSNAMEA= 'ARCHIVED_WCS'       / Coordinate system title                        WCSAXESA=                    2 / Number of coordinate axes                      CRPIX1A =      6412.6433707247 / Pixel coordinate of reference point            CRPIX2A =       6079.456447261 / Pixel coordinate of reference point            PC1_1A  =     0.48602153879109 / Coordinate transformation matrix element       PC1_2A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_1A  =    -0.87394683123811 / Coordinate transformation matrix element       PC2_2A  =    -0.48602153879109 / Coordinate transformation matrix element       CDELT1A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CDELT2A =  8.3333333333333E-06 / [deg] Coordinate increment at reference point  CUNIT1A = 'deg'                / Units of coordinate increment and value        CUNIT2A = 'deg'                / Units of coordinate increment and value        CTYPE1A = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2A = 'DEC--TAN'           / Declination, gnomonic projection               CRVAL1A =      189.11491404787 / [deg] Coordinate value at reference point      CRVAL2A =      62.267302958416 / [deg] Coordinate value at reference point      MJDREF  =                  0.0 / [d] MJD of fiducial time                       DATE-BEG= '2023-02-03T02:14:58.596' / ISO-8601 time at start of observation     DATE-AVG= '2023-02-03T08:20:20.822' / ISO-8601 time at midpoint of observation  DATE-END= '2023-02-03T14:24:18.755' / ISO-8601 time at end of observation       RADESYSA= 'ICRS'               / Equatorial coordinate system                   VELOSYSA=             -4387.78 / [m/s] Velocity towards source                  WCSNAME = 'TWEAK   '           / Coordinate system title                        WCSTYPE = 'user-defined'                                                        CD1_1   = 4.04942827269473E-06 / partial of first axis coordinate w.r.t. x      CD1_2   = -7.2826750288535E-06 / partial of first axis coordinate w.r.t. y      CD2_1   = -7.2836595876750E-06 / partial of second axis coordinate w.r.t. x     CD2_2   = -4.0505338831809E-06 / partial of second axis coordinate w.r.t. y     ORIENTAT=   -119.0794225499403                                                  ZEROPNT = '26.51   '                                                            LONPOLE =                180.0 / [deg] Native longitude of celestial pole       LATPOLE =      62.267305895902 / [deg] Native latitude of celestial pole        END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             A
+Ü£ìU:eA
+¨PnâA
+É’òx#‚A¡É’¹QsAÇÊ>MˆA
+<§Ž¢oÑA/œ¡ÔAé¥UEZA¸ØWn÷`A
+þôé†A	úî#c)A	¡+ŽNÊøAžI‚åüäA›5ê• A-ƒÏtˆuA
+Tãëæ‰A…,W7FAtr ûXAPÿh/vA	Ú™Lw5A
+ò	ÊßA
+'_cÞâ™Aü$c–™nA¯6™”†A
+(Ó¹¢A
+§lVÆåGA	QôÎÉAàE#'vA
+¬À´i÷üAÎÆjñÙA¶îÂ‹ÁA
+2&RÙŒA	mØ ùÅ„A	¦ðp6˜A
+/X‰áÂèABSOƒ2­A¼­F…€ÎA
+Ã,ú• µA
+xr,±ÁÍA	Ái}]æÜA
+mûuhAk¶5¨04A
+ZA
+—0·„5AjgpN$-A
+©ZÑ4ÚdA	€§ˆ­pBA	“S«B9¢A	©¬n¯´²A”4ß6Aã\#F´—A	(\t)çA	hC?fŒœA	²/ÉT ˆA
+JºY.xA	ØÜ°¸Š(AÕˆÒ¦ A«þ'­A
+!®ìŒ	—A	fŠ5é A_‰¯yŒõA
+†åîsA	`öÿ+ ˆA
+„7Äy–(A	áÖÁiüA
+
+!Õ)AØ&;A[‹¸l¡ñAº–^àgA
+ÊB%OÔZAü†æ~3A	_ž·¸A
+±#R]ÄýA
+zVp·ÃäA
+÷‚Œ+¶æAJ÷ù0oFA	‹ÜüÈ@A¿Ô8HA‘OîA	Y¶ÃìÉAæ6Ãmw<A	u–-@A×Ao)yŽAç5’sA	ÀÅôn±6A¹Y*²>,A$p‹ÆZîA	3°ÏA¹È^ÈA
+D4E÷PA
+M­Ós.A	Äü‘9©AXªc¡YA
+ƒð<]‚A:EL½BåA*Àú?ôA
+·gçÐükAæ¸_d¦A*áá]äA±ÿÀŠ‚oA
+ï”puAþ¥<ógÅA	Ó9ì2tBA	<ŽÆÝ³ªA
+É`é…U<Añ7aƒzÄA7¶—²ÐAÖ”ÎA
+[ås±‹¢A
+_ÒÌ/jA] çüà¸Aü½‘²þAªj˜Õô‘ARK¸¥é3A
+•½ÿþ+¯A	‡°»‰b)A,]“Š¸ARò>A
+$zaE7Aò07æÖ•A	õP
+æƒAéµS­­‘Aå„•Ù7áA
+ãAQ¦ÐíA	Ïôä$±0A
+~j6õ¢A
+»háÍtA
+r&/1ò"AÝ5>k A§w—.bAî•²”{°A
+ö]­á„AÈÌj=7>Aé®	{ÒUA	¸‘0ûAur MVA
+ÝBè}³A)´§çðAØü·‡íAy£©ðÜ7A
+4³ôÚ`A
+; b6psA
+ ðqGº7AwEþÙ½‚A
+	lCx•†A	‰¾‘A
+¯?°aSA
+eüP@ÌA	…£`º‘A¦5ï çmA
+÷
+à¿æAˆ"¡á£A
+ë-RR¹lA	k›îA	) -äêA
+…“ˆ£(îAá^˜‰ÊA ž¥Q¼ëA
+J [„A|æè˜ =A	ôqûZÿAtl·ß¸A
+©ç›•A·ø›iÓ¦A	÷Ê1A¢§ÌA	ÜÚ³4'A‘ÒžG­DA	_“ö¶,hA
+ •q^EA
+9o&ÞäªA	¹¯Û­A
+AR¡ T„A
+IsËõœA	?öO ªA	oéSt?A
+Ñ€DwkAø!Ã+¤SA
+_]GF/àA»sá£ A	+7¯9„A
+pÜA
+â:ÅA
+µçí¯ü_A
+ÎÝA	‡R¼sÓA¡a9AÐÐECªhA	¯&_uUWAr.vóA>½ÿ³¨A
+Ki_‹ÆßA[‡ÇÌäA	¯®w¿MAØ€!>NA
+Ó¹dÀA_ÛÊ])A
+‰—ÌnxA	ôDƒ!iA	ùÆ°®?A
+1
+˜VéA
+qù˜˜TA
+ä©zL@A	ëL6æW®A~›¢ nA
+Tg³A	N°‡µ ðA	øœƒúsúA	†HëæA	D{‚/>ëA
+”Î³ÊHºA
+œ:úXAÜÊøQmîA3f±X·A4á+A	–Ðš™3‡A:­–
+A	î§¬¾öA
+€ðqöµ[A
+œ\èþ	3A¨DïúFLAe‡u(m~AÀ‘årËA5€†oÛ/Aöˆ9¢ÄNA	écÅäÄA	jñ*­,A
+Ÿõ]‘PA
+)ýÀ‚6A Ð>£ŸÌAªÃiÕ»çA	Ñú¿ +A	{gU"£µA	ÎôÜ 	A
+ýýP}OAO€Ð„¨ýA,¸Mü¬ŽA	hç|·–A	]&Dí˜|A
+P”ÐìRALVôµxA
+Å±ÀA
+¢:¯Ah'A
+Î«Šì †AëL]Ú$A
+¶}µ9–A¾ŒRErAè“ˆ¦A
+ý±ÔË,A
+n1ëKíA
+=ï¡rénA
+Ò]¤Oc2A
+=¥ƒØâ5A†
+Uò¤{A	9=z÷°–A$¤W/,AÆY¼UA€+õdA¸­†X©ˆA
+m¾oNeËA	4OÒÅtA
+d£É«šAÆ=‘aÿÉA
+ ŒõÇóbA
+jŒüúÓA	â÷'ùAõ/=)A=ìfN6A­/ØsêA
+4kPžŠA§ –°{,A	S£AâAþŽ4BÙA|›¢ÚÂAÜm#;A	þÀñØç5Aä';ô^ÓAå[ó¹WA‡·2â£ÃA	©¾µ¼	A	1XÀqüyA	ùh„LA	vÂ‹ñA
+’È¨fáAN$-pçjAìEÃA	þºølë~A
+?þDà~AÙ	#êùºA
+Š‚JN9A	«|X³«A4Ñœ|HA	E".-y¾A
+n’BA	ï¢R}A
+ú{;«ázA	ûéÿJ)"A(Ÿ¯õôA‡ˆñWæ^A	ÙêÐ¶6AAØÖ-V.ÆA
+-ì'ö²žA
+N¬µªºA
+¡è3qù™AW­¬!>A
+‡»NIªA8ä:ïýlA
+”eÐmA	d‚¬eðA9¬jÞNuA
+!*tiA
+Œå`FüA
+”üS·Ú¼A	ù!‰ëA
+}€h}A
+!•”1èÛA·¯<wþäA
+P6Q×EÈAÓ†•-A;XdCA
+!`Ð‹\¤AIééÿBA	£}D•A{¦FAV; ’êA	†×Ç?“A
+€•ˆ§A	I2[5jA	†Ÿ«¤^A	•
+ÔµKWA
+A·ó>¾A
+/à(+£AI“LYçA
+KT´/¸A	ÀähäA
+Ž•+[ö¶AU/Šý A
+T”ò?ÜA
+†GûJàA
+£*ŽúAXCnr	dA
+³%€|ÙÛA	º'Ì–v¸A
+}¤Y’™A
+yBlÞA7d8¨v A
+Æ‡/ðÕA
+=”@Z´ÈA3¾ÖfT—A
+ßU A «Ö± åA	n©z²Œ8A¦ãºŽöÍA	é:»eA
+]äŒþA
+‚p:A	uÅèÔA	â´6¿ÉA
+/J ¹AZÚeèöA¨‡åFÅéA	UâYâ;A	pwY@-AHÌ¢”zAi¶|¦»A©,²	A
+ˆüƒÿ§AÃW…UA	At'Ô A
+à‰‘±„eA™˜ÔíäkA	¿:šwžA
+‹z´ƒ\ŒA
+,>ºÒ,7A
+«µ‡©/øA
+"ç(j2AaY‘;ºA¶VãÉ.£A	Ð¹Vaé;A
+h³!Î¸+A	hñÈ]¹{A
+0 ÍÚ'ÆAŒÎ	âaA	:õ@Q×.A	yaýØåÊA
+¸ÆGÐ6A	µœÎA
+ß¦i±UvA½‰fVåAâë±
+¡6A"yBÙóöA™Å¢ÂÂ®Az˜å4A	vÆY^A
+,Dcm A	©Þ•ÔA
+¯âˆ€!×A	²^eœl€A
+nÜIõæ,A-à˜Wè”A
+Fzô¨A†ìf2ïÎA*¢ ^âA["ìuÒA	H»‚Aÿ0 õšA
+|tdQ·LA
+šî=ùƒxAŽ¼âkA
+ˆ®lk‘ßAQøíŽŸA®›kÿmæA
+†ºÝ¿VtA‘™ÁûK¾A	øøMÛµ{A	÷&¡v|A	˜ÕG+oœA
+[·H^5A
+e£Öò©AÛ…1NÁˆA
+3ã‘§ÆhA	ýAò"p˜A?	¹ýdâAHO½©ÛA
+ó)ŒóÌAr½u’ÇA
+Ó^Ätd´A
+ã/û
+ˆÜA
+`båõ˜¤A
+¼‘_´©ìAT8µ¿´ÂAÝÍ CüAø*¨=žA÷RÒÐVA
+É¿[¦A›×áyšA
+›tô¤KHA	•G ÀA¾ê¿ÀÎA¤>¿£xaA	Î†_4'VA	ˆ€£mçA
+IÈÆÀÅqA2T°±‚AÊ²ûÎÑ€A
+§9bï@lA
+bÏ»mÅ×A
+Çì+ìx\A
+uÞ=¥Ó@A­rT|ŽAa¡G=ø@A03‰ŠvZA—–°YÈ)A	³ y0A	ø±"óé}A¸{lœA»_ëá«òAz@ øÈA¤Žþ#.¼A	¹DL»tA—¨‚ã¢A{}ÆâØ	A4sâß(MA
+S‹Iæw¤Aëx9UŠA
+âòsÓ#‚A®þß2tA
+áömX<QA	RÆaN¸AÁ‹¾èA	‘&á3œeA	¬<<Á#A	6Ì]ç'wA
+5RoÚŽÐA
+¢æç±T¾ATÉÆiK,AaCìªn‹A	àHž õAà€Ì`A	NÍ„²1AâÕ¡ AäøÂæ7A	l;Ó—(A
+V<,9iÎAF¦à^jAœ¬.ˆ‚§A	»Ó•£]ØA
+{%»xëA	Ôš‘1xAe[<ÝÔnA	fª¦ô”–AÎ‚E¼A	3|ïsÒA¼Hîó¸AŽÊâý"AxJ…“Ç	A<9ýS±Abq7æA
+äpË¯ìA
+èÏðü¹A `tÔDÅAúYš}½ðA
+H÷Ìu,A÷{-VAcò©Á@AÈÍ9k$A
+ùyß{A	ßöpN!A	kn,î¯AÝï^4A³ÌÕôAõèxý™A	{Ó]ŒA
+ØcNOñ)A
+KÐtAÓ¨Ä+XAúDQÐaŽA’m#O0©A
+"ö†ÎfA
+‘›µ<A
+Já‡‘D¨A
+ô`†¬¨ïA	£‹òq£±A«ùÙf´Aä”K’ØA
+%C2ôA
+Íí®äêâA‰³†{S3A¢¬~ÍRA	™¦ÆNuÌAh6RI­‚An$±_¾|AqA1ÅDA
+¨¹w _{A™H!¿LA	sÍ’SßAg7Jø A£åÚàA	§Â•ÿËzA
+RìŸ×}A
+È 
+‹ø¾AÕö¿6A
+c~Tù§A
+ü+†ÿšA
+LßSø.A‘‘¸%$ŽAÉX³*A
+0Bÿæ^CAÀ»8¹ôAqìÏv”A¿ÙýHA
+’%Ó­{¦A
+véA-¹A	‹L¶ÎA	èŸOd‹A	ÜôÉÑ	bA0}TA	³… ÈlA	qˆeÓ A](7‰¤AˆÓ2qÝA¦aB-éA}­\mA	?YL.ˆA(GÎ·.ÏA
+˜Ö‡m®°A	Qð/óØÄA	:“¿Çr4A	h'Š7änA_åù
+,A
+öýâ–CA
+ýVeÆñ²A	÷7YØ^½A	,E^¬ÁA
+¯dJèoËAC&iÀA
+Oý$g¼A
+%“öoMA„ûÉgA
+É¬hl°CAØ£:zSA]—®=Ý€Aõ@VÙAêŠlr6ÿA
+V»$Ü¥ìA
+E“³V¼A
+ZèíMèrA	=îSà[ÌA	¤ÐZxAÒ?PnoAÀü›í\A
+ß<roA
+é³ÐAë5dò@A
+Ç"]IZóAµiu1ÓŸA
+$Uõ¡¿A
+W®ôlcÎA
+8ªM]ìA	íëÏæ¶,A2ÿ8W1HA
+J0)KQAè8ðý6pAàÈ7|áA	Ì6pU¶JA	(ú,ø®vA
+šCvþ-µA
+˜w–ØA
+r~°×´A
+§0^ûwZA±Q’ÅqA¢è4ÀATrÆÃâVA	†©ðB-ŒA	×Æ©+ªNA	Ñum×£åA
+s!e#A	hMü€8A	Gxs<A	ª/®ÜØA
+<®G¿¼éA
+ªW†TZA/¿xß5AÐö&úðAPÐkØA!¬™i3A
+:ÐßÕA	ÝpØúfA	cÝf_A
+wŒëµ)A	f¸bôzRAƒS+Öe]A	ãeK¬OÐA	´"t	¹A
+§Õ×¥A
+#F•ÁJ‚A	–#ý4´A	Š+pxš2A	:V(çÐTA	D
+ÌgA
+à2€KáAÙG0:MØA
+Ï®G¨C_A
+[B+U{”A'PÒ2¡Aõïnr”xA	¡!vžÿAþ”èöúA
+Ø­YMªAétIšƒªA	¸eý«AlO$ó›:A	ÛËO•-A	L¬®9 A	ýüVo`A
+)gÓ(rAd:å1nAsA5âÒA¤aè}A
+8<î‚þûA‡j?"ðA¯|{T‡uA«ýJ+A
+Êô&NA	íj½ª¥A®¼µIÉÖAXáÙ¼¢A	ü,¯£ðA
+ƒÇ3k—A
+fé…ƒ¸A	?3¾sA ’™0xAŸhÜ)A	ö»µù-A	'ÒÏlª‹A9zWüAÎA	à3CEÌA
+–v4ÐÄDA}Ÿc¢´AÇ'p¨Ì`A
+ ³	z[æAãPî÷HA
+Óõ‰
+A4E÷ÿKÚA
+qš£7ºA
+>q&¯ÇAÂÿR/:AcP·†A
+:p?ŒViA	­‹s‡ò†A
+{7A-ìAYE¾ÌGÑAw°õ£1A	¢HI³A
+ìºðˆ8AÉPIL¹AìeFëuAƒÿ‘ÄVqA	'=›÷“YA	.äDF8AA
+êFÈœA
+T!* NA	Ÿyé“0JA	’dNÄÌA	c(ÝÔf;A
+WðdëõAmúÓÐª—A©ÖA¹ c¢½LA :ëá	A²â|A	§%MyC©A	Å»ÓpšÍAP;c©cA	$€ºèA“™_rOaA
+ø©|9}„A	K£`LA	{‡SèãøA#ÙTEòhA
+Û«œ}ÿAÚ´Z×îA
+ê³UvžA¿”@h•A
++ÖWÐ•ËA«ûÓo>mA	ºvåËÖTA
+"4¨MedA
+ÿoÒÿ§A"Û¾b} A
+8€XkjA	‡Ó™Ô×¢A	Ï„Þ¯»A
+»TßCÙA
+N»¸/Aô<ÚÍ¹A	k˜Vs-fAûÍö<A¶&ô¼ïA
+fi2îGMA
+Î6&çšAzÕ¯€³ÜA	(`šŽA
+jqµ²âÛAw
+r\ÝÈA
+ù1ýŸoúA	Ð\À=£A	—ÒJL9ßA
+ÐŸÁ¦óA
+žP$ëH`A	ôF´Ã@-A ñ^S AO¤¸éjôAe5ß¹A
+ÇÎ7BfA
+Û¼QePÓAnjy¤A	¤WC‡|ºA	)ì*¾°ÔA]³ŸªDAú·AŠPA
+Èú¿±A	õ4éémA	Ëi4ÂøøA	Ö(¾_³A	†Ÿj¨«A
+¤`þï\A	“ó^;<AoìÓèžžA¾Šðûw±A	=ç€nf¡AðiA	üáË6A8±,²ævA­|’-s¹A	½šûêƒ\A	+¤ ì‘êA
+l‹nT×AE¬ÿ¾òYAæËÅ&1A	lƒƒ«,AðQñùXA'…ƒÄßA·y â¹jA
+ô0%\‹Ajˆß+x°AÔsB„AæolöÚÜAyiƒ~A	ð±,†šA
+ÅfÆÌ”,A	I«NBéA
+‹%×¼||A
+çéØp¾DAmUÁù„âA‹Õa
+5A
+~_hÜA
+n[™¤[A	Çi7&‰A	<¤âùäA
+pZ‹…¡A
+ÓæZÝµ$AËˆŠ¬Avu`]¹6A	šæHlA‘Q‚cA
+ª7Hé£A
+‹j»ÿ;ºA
+G»A	Õú™½UA
+VÄÅWÜA	8³’M|RA	¬f8^@üAl)×ä¤A
+slÏ·¬ÞAWM3aXA
+ðI¬I¨Adµ0*D˜A
+S5"6Ž:AR•œ÷hA	m­3ÿ·A
+ÅDH3jA4×ôFáAÃÈZü¶ÕA	¸Ï#±âA
+H·suA	õo£áAå¼…RAê—–žÌ¿A
+ïâ¡A	àubXfA	ÄDùýAq¡¸hBEA
+GÊùq-iA?}€þ‰-A
+»2ÝZÂßA	Üz¾«ˆA
+£åøOôA
+<ú®ŸMA	×¬W[rA
+ÚÀ"i3A
+‚ª$íý&A	±„$Œ‚¾A		i1
+A	ÙÚî~&|A
+€ðßñA	ùÓýïæA	‡Ä#î­PA
+0°š˜ÛA#[IðWA-¤E¥KA
+¨Ó¦ùº™A
+,Ü4i0A
+ÑïÓ[“A
+/ïgØsAæÕ¢Ëy@A	Ç;@ÃH¦A
+ÕÔ¥mÞAAQGÆaA	iifæA	z,,õdA	ˆÎ'ZªAø¤š’ÛÏA	§÷:žŠïA¨7mã_9A
+-Õe~fA
+Œ—a%~A	¸9ZcÎÚA	ô“…÷^RAv½]ÊòÂA	(]899A)ìE·ÊÁA
+gÙ°§	´A
+mÊ:¢A
+&¥ˆÛˆA
+…âþÈ–“A†d?A	7€ˆ#A	¹½Wák­A	™­‹­ÌVA	ˆ—¡î²A
+A.7¡•wAwFJ©€„A ù¨?^A
+ÄÌ>kóWA	œ{‘J8#AFŒq$A¾xíÆc‡A
+*WñÔ6A
+Ë8Mó1A`ý#/ÖVA
+Èã8™e°A	‹Øj~A
+"Sù*AÏH›axAÒ‘¤ƒ“ A¸U¹ñøAEõO_‰A	2š	q
+A	æ¹¼ÔÌA
+ÅZ,*A0È¯¹8A
+õi3¡[1ATeôÍ|A
+GÇÔ´Aö(fkxAUQ]ª¦NA~S­þ;A
+W4~àcÁA	ø T!kžA
+HÈ-lƒAèNB©ù?AÉ%¾ŠAÅÍ®âtA
+ì‚žìs:A!© fA4Éã 9øA
+ßž¦3aA
++×)Ä–(A
+E¬ræ¹8A	Ùx]Ñˆ†A
+@ý¿q<ÉA(ü„r‡A
+p%÷¾9A
+gRç1K–A
+Š§é'¼A	1áy\ãôAôM!mA
+ÝÒ¡ÚðA	ü×Ñ×sA
+´†‹I$A
+…<ÿm®A	ôÀm¤ÅA…Óì£õAßSß™ÈA300ÍñA² æg;}A
+Õ_™kÐA	N‘Ü{A
+lêƒþ&A
+Ùa;špA	z›@ùìA
+d‚Ð=A‰Ak†/tq£AyO|A¶n‡7è¶A'ÒNèA›–*¸ªYA
+·‹oWA
+Ú á‚½ÜAmŸ`Uù A	îX.èMvA	‹X@îÔA
+Š2ˆA	 KïT*A
+VåÃ¼²A!î ð»A
+è\H¥&²AiáeõÝƒAbâôTN­A	zÀ—)à3A¡f©/AolqrÇ±A4Ùö ñA|:AñRA
+ü®½ö«A
+SÍM|8ŠA
+ÎcIçõVA
+ìñ&â4AåëpaíjA%¡fB©AO
+±³A
+é/ˆƒådA
+z¡ß@A
+Ã2<…0¤A
+¶pÐ§ŸxA
+ÖË	:íAðq`ÜÚAFÇùä¢]A
+0»>ƒðƒA
+fM$d†A	%E,bAm|Å%ÌAZEZ°=A	•œÕZÑüA	”³ÚÅÍ
+A@´V	±Al¨<U(A	Üê§
+UwA	•NZvEA×þP¿È±A
+®a“ñ^A	±å¥ÀyAèùö¨®ANü*P7FA¦»½”ÃA^‰¥pA
+¥ë¢
+*«A
+­d´ÿ(-A
+b7z+A	˜óõœ?¿ArªÎkø;A€)ÁA`üÜÁA:â³KPA
++ÆR4áTA
+™ýS7fA	“¡¼(;A
+CØ+(ù
+A/X™ÏVÛA
+zs8nA	>øX«ÎjAá©ùãgBAdÍÐ‘<A	¸T¤µA	
+w"%Ò¦A	Ä*ex¶A¹ø˜-bA
+yžo®/VA
+° Ë,%¬A	e?áYA
+;„ðñÚLAo·*K´                                                                                                                                                                                                                                                                                                                                                                                                                                                                

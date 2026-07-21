@@ -141,17 +141,17 @@ PROFILES = [
 # to fit a subset -- e.g. RUN_PROFILE_KEYS = ["sersic", "pointsource"].
 # RUN_PROFILE_KEYS = [p["key"] for p in PROFILES]
 # RUN_PROFILE_KEYS = ["sersic_pointsource", "sersic"]
-RUN_PROFILE_KEYS = ["sersic_pointsource"]
-# RUN_PROFILE_KEYS = ["sersic"]
+# RUN_PROFILE_KEYS = ["sersic_pointsource"]
+RUN_PROFILE_KEYS = ["sersic"]
 
 # Sampling settings
 NUM_WARMUP = 1000
 NUM_SAMPLES = 1000
 NUM_CHAINS = 2
 
-BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Single_sersic_fits"
-CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Cutouts"
-PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/PSFs"
+BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Pysersic_results_3p0as/Single_sersic_fits"
+CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Cutouts_3p0as"
+PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/PSFs"
 
 
 # ---------------------------------------------------------------------------

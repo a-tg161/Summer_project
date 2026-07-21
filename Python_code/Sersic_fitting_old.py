@@ -1,4 +1,6 @@
 """
+TODO: NOT USED ANYMORE!!!!!!!!!!!!!!!!!!
+
 run_pysersic_fit.py
 
 Fit a single Sersic profile to a galaxy cutout using pysersic, with:

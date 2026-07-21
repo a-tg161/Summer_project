@@ -116,7 +116,7 @@ FILTERS = ["F444W", "F356W", "F277W"]  # filters to fit, used for labeling/outpu
 # source combination is used in the literature with pysersic but the docs
 # don't pin down one canonical name for it). At runtime, run_fit() calls
 # SourceProperties.generate_prior() with each candidate in turn and uses
-# the first one that doesn't raise -- so a single-item list is just "the
+# the first one that doesn't raise -- so a single-item list is just "
 # name", and a multi-item list is "try these until one works". If NONE of
 # the candidates work for your installed version, run probe_profile_types()
 # below to see exactly what your version supports.
@@ -149,10 +149,10 @@ NUM_WARMUP = 1000
 NUM_SAMPLES = 1000
 NUM_CHAINS = 2
 
-BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Pysersic_results_3.0as/Single_sersic_fits"
-CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Cutouts_3.0as"
-PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Cutouts_3.0as"
-IMAGE_SHAPE = (100, 100)
+BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Pysersic_results_3p0as/Single_sersic_fits"
+CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Cutouts_3p0as"
+PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Cutouts_3p0as"
+IMAGE_SHAPE = (100, 100) # 3.0 as
 
 
 # ---------------------------------------------------------------------------
@@ -264,10 +264,9 @@ def load_science_data(galaxy_id, filt):
     """
     Load science image, segmentation-derived mask, and rms map.
     """
-    science_fits_path = f"/nvme/scratch/work/alberttg/Summer_project/Cutouts_3.0as/{galaxy_id}/cutouts/{galaxy_id}_science_{filt}.fits"
-    seg_fits_path = f"/nvme/scratch/work/alberttg/Summer_project/Cutouts_3.0as/{galaxy_id}/cutouts/{galaxy_id}_segmentation_{filt}.fits"
-    rms_fits_path = f"/nvme/scratch/work/alberttg/Summer_project/Cutouts_3.0as/{galaxy_id}/cutouts/{galaxy_id}_error_{filt}.fits"
-
+    science_fits_path = os.path.join(CUTOUTS_DIR,f"{galaxy_id}/cutouts/{galaxy_id}_science_{filt}.fits")
+    seg_fits_path = os.path.join(CUTOUTS_DIR,f"{galaxy_id}/cutouts/{galaxy_id}_segmentation_{filt}.fits")
+    rms_fits_path = os.path.join(CUTOUTS_DIR,f"{galaxy_id}/cutouts/{galaxy_id}_psf_{filt}.fits")
     with fits.open(science_fits_path) as hdul:
         image = hdul[0].data.astype(float)
 
@@ -284,6 +283,14 @@ def load_science_data(galaxy_id, filt):
         )
 
     mask = build_mask_from_segmap(segmap)
+
+    # Also mask any non-finite pixels in image or rms so they can't
+    # leak NaN/inf into SourceProperties' guesses or the likelihood.
+    bad = ~np.isfinite(image) | ~np.isfinite(rms) | (rms <= 0)
+    if bad.any():
+        print(f"[{galaxy_id}_{filt}] Masking {bad.sum()} non-finite/zero-rms pixels")
+        mask = mask | bad
+
     return image, mask, rms, segmap
 
 
@@ -512,6 +519,27 @@ def run_fit(
 
     # -- Build prior -----------------------------------------------------
     props = SourceProperties(image, mask=mask)
+
+    # Sanity-check the guesses before handing them to generate_prior() —
+    # this turns an opaque "invalid loc parameter" deep inside NUTS into an
+    # immediate, informative error tied to this exact galaxy/filter.-----------------------------checking for bad props
+    guess_names = ["flux_guess", "flux_guess_err", "r_eff_guess",
+                "r_eff_guess_err", "sky_guess", "sky_guess_err"]
+    bad_guesses = {}
+    for name in guess_names:
+        val = getattr(props, name, None)
+        if val is None or not np.isfinite(val):
+            bad_guesses[name] = val
+    if bad_guesses:
+        raise ValueError(
+            f"[{tag}] Non-finite SourceProperties guess(es) before fitting: "
+            f"{bad_guesses}. Likely cause: too few unmasked pixels, or "
+            f"NaNs/zeros in image or rms leaking into the stats. Check "
+            f"image.shape={image.shape}, finite fraction={np.isfinite(image).mean():.3f}, "
+            f"unmasked fraction={(~mask).mean():.3f}."
+        )
+
+
     prior = None
     profile_type = None
     attempt_errors = []
@@ -866,6 +894,11 @@ def run_fit_sersic_pointsource(
 
     props = SourceProperties(image, mask=mask)
     guesses = _get_prop_guesses(props, image.shape)
+
+    for k, v in guesses.items():#-------------------------------------------------Checking for bad guesses
+        arr = np.atleast_1d(v)
+        if not np.all(np.isfinite(arr)):
+            raise ValueError(f"[{tag}] Non-finite guess '{k}' = {v}")
 
     # A photometric flux_guess_err or r_eff_guess_err that's too tight
     # (e.g. a small formal aperture-photometry error, ~1-2% of the mean)

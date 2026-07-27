@@ -97,8 +97,8 @@ import corner as corner_pkg
 with fits.open("/nvme/scratch/work/alberttg/Summer_project/Ha_and_NII_broad_line_data.fits") as hdul:
     data = hdul[1].data
 TABLE = Table(data)
-GALAXY_ID = TABLE["SURVEY_ID"]   # object ID, used for labeling/output files
-SURVEY = TABLE["SURVEY"]
+GALAXY_ID = TABLE["SURVEY_ID"][70:]   # object ID, used for labeling/output files
+SURVEY = TABLE["SURVEY"][70:]
 
 FILTERS = ["F444W", "F356W", "F277W"]  # filters to fit, used for labeling/output files
 
@@ -158,7 +158,7 @@ PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/PSFs"
 # DIAGNOSTICS
 # ---------------------------------------------------------------------------
 
-def inspect_renderer(renderer=None, image_shape=(32,32)):
+def inspect_renderer(renderer=None, image_shape=(100,100)):
     """
     Diagnostic: print the actual call signatures of the renderer's
     render_source() and any per-profile render_<type>() methods on your

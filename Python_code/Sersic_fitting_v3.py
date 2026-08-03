@@ -319,8 +319,8 @@ PROFILES = [
 
 RUN_PROFILE_KEYS = ["sersic_pointsource"]
 
-BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Pysersic_results_3p0as/PS_single_sersic_fits"
-CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Cutouts_3p0as"
+BASE_OUTPUT_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Pysersic_results_0p96as/PS_single_sersic_NEW_fits"
+CUTOUTS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/Cutouts_0p96as"
 PSFS_DIR = "/nvme/scratch/work/alberttg/Summer_project/Data_products/PSFs"
 
 
@@ -692,6 +692,37 @@ def _build_inverse_variance(rms, mask):
 # ---------------------------------------------------------------------------
 # NATIVELY-SUPPORTED PROFILES (sersic / exp / dev / pointsource / doublesersic)
 # ---------------------------------------------------------------------------
+
+def _write_asdf_result(fname, image, rms, psf, mask, loss_func_str,
+                        renderer_str, method_used, prior_info, model_image,
+                        median_params, posterior_dict):
+    """
+    Write the same asdf tree PySersicResults.save_result() would, given the
+    pieces directly instead of a PySersicResults object -- shared by both the
+    natively-supported profiles (via `_save_result_light`, below) and the
+    custom Sersic+point-source model, so both produce byte-for-byte
+    comparable .asdf files.
+    """
+    import asdf
+
+    tree = {
+        "input_data": {
+            "image": np.asarray(image),
+            "rms": np.asarray(rms),
+            "psf": np.asarray(psf),
+            "mask": np.asarray(mask),
+        },
+        "loss_func": loss_func_str,
+        "renderer": renderer_str,
+        "method_used": method_used,
+        "prior_info": prior_info,
+        "best_model": np.asarray(model_image),
+        "best_model_params": dict(median_params),
+        "posterior": posterior_dict,
+    }
+    if not fname.endswith(".asdf"):
+        fname += ".asdf"
+    asdf.AsdfFile(tree=tree).write_to(fname)
 
 def _save_result_light(results, fname, model_image, median_params):
     """
@@ -1453,7 +1484,42 @@ def run_fit_sersic_pointsource(
         )
     ) + sky_value
     model_source = "posterior median (NUTS, custom Sersic+point-source model)"
-
+    #-------------------------------------------------------------------------new below
+    prior_info = (
+            f"flux ~ Normal({guesses['flux_guess']:.6g}, {guesses['flux_guess_err']:.6g}); "
+            f"xc ~ Normal({guesses['xc_guess']:.6g}, 1.0); "
+            f"yc ~ Normal({guesses['yc_guess']:.6g}, 1.0); "
+            f"f_ps ~ Uniform(0.0, 1.0); "
+            f"r_eff ~ TruncatedNormal({guesses['r_eff_guess']:.6g}, "
+            f"{guesses['r_eff_guess_err']:.6g}, low=0.5); "
+            f"ellip ~ Uniform(0.0, 0.9); "
+            f"theta ~ {'VonMises(' + format(guesses['theta_guess'], '.6g') + ', 2.0) [CircularReparam]' if THETA_PRIOR == 'vonmises' else 'Uniform(0.0, 2*pi)'}; "
+            f"n ~ Uniform(0.65, 8.0)"
+            + (f"; sky_back ~ Normal({guesses['sky_guess']:.6g}, {guesses['sky_guess_err']:.6g})"
+               if sky_type == "flat" else "")
+        )
+    _write_asdf_result(
+        os.path.join(output_dir, f"{filt}_{profile_key}_data.asdf"),
+        image=image, rms=rms, psf=psf, mask=mask,
+        loss_func_str=(
+            "Gaussian (custom numpyro.factor: "
+            "-0.5 * sum((data - model)^2 * ivar), ivar folds in mask + "
+            "non-finite rms/data)"
+        ),
+        renderer_str=(
+            f"HybridRenderer(im_shape={kern.im_shape}) via custom fused "
+            f"_render_sersic_pointsource (shared-centre Sersic + point "
+            f"source, single inverse FFT)"
+        ),
+        method_used="NUTS (custom Sersic+point-source numpyro model)",
+        prior_info=prior_info,
+        model_image=model_image,
+        median_params=median_params,
+        posterior_dict=idata.to_dict()["posterior"],
+    )
+    print(f"[{tag}] Saved asdf result to "
+            f"{os.path.join(output_dir, f'{filt}_{profile_key}_data.asdf')}")
+    #----------------------------------------------------------------------------New above
     fig_resid, ax_resid = plot_residual(_rw(image), model_image, mask=_rw(mask))
     fig_resid.suptitle(
         f"{galaxy_id} - {filt} - {profile_key}: data / model / residual ({model_source})"
